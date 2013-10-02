@@ -39,7 +39,7 @@ meta標籤在HTML文件中，是用來設定該文件的meta資料，除了可�
 ```html UTF-8.html
 ...
 <head>
-	<meta charset="UTF-8" />
+  <meta charset="UTF-8" />
   <title>標題</title>
 </head>
 ...
