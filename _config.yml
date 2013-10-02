@@ -3,16 +3,16 @@
 ## Source: https://github.com/tommy351/hexo/
 
 # Site
-title: Hexo
-subtitle:
+title: 新罪楓翼☆灆洢騎士
+subtitle: SINMAPLEWING☆LANYIKNIGHT
 description:
-author: John Doe
-email:
-language:
+author: 灆洢騎士
+email: sinmaplewing@gmail.com
+language: 繁體中文
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://sinmaplewing.github.io
 root: /
 permalink: :year/:month/:day/:title/
 tag_dir: tags
