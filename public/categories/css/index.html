@@ -1,0 +1,279 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>css | Hexo</title>
+  <meta name="author" content="John Doe">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+  <meta property="og:site_name" content="Hexo"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Hexo</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper">
+<h2 class="archive-title category">css</h2>
+
+
+  
+    <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2013-09-04T15:40:00.000Z"><a href="/2013/09/04/2013-09-04-css-create-animation-effects-use-the-keyframe-animation/">Sep 4 2013</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2013/09/04/2013-09-04-css-create-animation-effects-use-the-keyframe-animation/">#CSS：製作動畫效果－使用keyframe與animation</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>之前在網站上搞了一個Logo用的CSS3動畫，然後現在這個部落格的標題也用了CSS3動畫，故現在想來好好地整理一下跟CSS3動畫相關的功能，底下就開始說明該如何建立CSS3動畫。</p>
+<h2>使用@keyframes建立動畫內容</h2>
+<p>首先先在CSS檔內建立@keyframes去制定動畫的內容，其Syntax在下方：</p>
+<figure class="highlight lang-css"><figcaption><span>keyframes.css</span></figcaption><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+</pre></td><td class="code"><pre>@keyframes 動畫名稱 {
+	關鍵影格選擇器1 { 眾多css樣式; }
+	關鍵影格選擇器2 { 眾多css樣式; }
+  ...
+}
+</pre></td></tr></table></figure>
+
+<p>概念類似Flash當中的關鍵影格，在動畫內建立各個位置的時候，其css樣式為何，到最後就交由瀏覽器去做補間效果。</p>
+<p>關鍵影格選擇器的部分可使用：<br>1. 0-100% ： 在時間的幾%時為何種css樣式。<br>2. from、to ： 其實意思與0%和100%一樣。<br>上列兩種選擇器範例如下：</p>
+<figure class="highlight lang-css"><figcaption><span>percent-selector.css</span></figcaption><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="at_rule">@keyframes myAnimation
+</span>{
+	0% <span class="rules">{ <span class="rule"><span class="attribute">margin-top</span>:<span class="value"> <span class="number">0</span>px;</span></span> <span class="rule"><span class="attribute">background-color</span>:<span class="value"> yellow;</span></span><span class="rule">}</span></span>
+  50% <span class="rules">{ <span class="rule"><span class="attribute">margin-top</span>:<span class="value"> <span class="number">50</span>px;</span></span> <span class="rule"><span class="attribute">background-color</span>:<span class="value"> red;</span></span> <span class="rule">}</span></span>
+  100% <span class="rules">{ <span class="rule"><span class="attribute">margin-top</span>:<span class="value"> <span class="number">100</span>px;</span></span> <span class="rule"><span class="attribute">background-color</span>:<span class="value"> blue;</span></span> <span class="rule">}</span></span>
+}
+</pre></td></tr></table></figure>
+
+<figure class="highlight lang-css"><figcaption><span>from-to-selector.css</span></figcaption><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="at_rule">@keyframes myAnimationFromTo
+</span>{
+  <span class="tag">from</span> <span class="rules">{ <span class="rule"><span class="attribute">margin-top</span>:<span class="value"> <span class="number">20</span>px;</span></span> <span class="rule"><span class="attribute">color</span>:<span class="value"> yellow;</span></span> <span class="rule">}</span></span>
+  <span class="tag">to</span> <span class="rules">{ <span class="rule"><span class="attribute">margin-top</span>:<span class="value"> <span class="number">80</span>px;</span></span> <span class="rule"><span class="attribute">color</span>:<span class="value"> blue;</span></span> <span class="rule">}</span></span>
+}
+</pre></td></tr></table></figure>
+
+<p>建立好@keyframes動畫內容後，接著就要在欲放置該動畫的CSS樣式表內加入animation屬性。</p>
+<h2>Animation屬性</h2>
+<p>Animation屬性的Syntax於下：</p>
+<figure class="highlight lang-css"><figcaption><span>animation.css</span></figcaption><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="tag">animation</span>: <span class="tag">name</span> <span class="tag">duration</span> <span class="tag">timing</span>-<span class="tag">function</span> <span class="tag">delay</span> <span class="tag">iteration</span>-<span class="tag">count</span> <span class="tag">direction</span>;
+</pre></td></tr></table></figure>
+
+<p>或者依照上面每一項的名稱皆可分開寫：</p>
+<figure class="highlight lang-css"><figcaption><span>animation-split.css</span></figcaption><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="tag">animation</span>-<span class="tag">name</span>: 動畫名稱;
+<span class="tag">animation</span>-<span class="tag">duration</span>: 動畫作用時間;
+<span class="tag">animation</span>-<span class="tag">timing</span>-<span class="tag">function</span>: 動畫補間時運用的計算公式;
+<span class="tag">animation</span>-<span class="tag">delay</span>: 動畫需間隔多久後才開始;
+<span class="tag">animation</span>-<span class="tag">iteration</span>-<span class="tag">count</span>: 動畫作用次數;
+<span class="tag">animation</span>-<span class="tag">direction</span>: 動畫作用的方向;
+</pre></td></tr></table></figure>
+
+<p>animation-name指的就是上面定義的@keyframes的名稱，找到你想用的@keyframes的名稱，填上去即可。</p>
+<p>接著可以從animation-duration去指定其動畫時間，這也是為什麼上面定義@keyframes不是使用時間，而是使用%，這可以讓同一個動畫重複使用，並且不一定要執行相同的時間。</p>
+<p>timing-function有linear、ease、ease-in、ease-out、ease-in-out可以用，或者可用cubic-bezier(n,n,n,n)來自己制定(0 &lt;= n &lt;= 1)。</p>
+<p>至於iteration-count如果要無限多次可用infinite。</p>
+<p>最後動畫作用的方向指的是動作作用的時候可以是@keyframes相反的方向(to-&gt;from、100%-&gt;0%)(reverse)，或是作用完後又回頭(alternate)、或是先相反再變正常順序(alternate-reverse)。</p>
+<p>底下用個範例去使用上面定義的myAnimation動畫：</p>
+<figure class="highlight lang-css"><figcaption><span>div-animation.css</span></figcaption><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="tag">div</span><span class="rules">{
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">100</span>px;</span></span>
+  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">100</span>px;</span></span>
+  <span class="rule"><span class="attribute">animation</span>:<span class="value"> myAnimation <span class="number">3</span>s ease <span class="number">0</span>s infinite alternate;</span></span>
+<span class="rule">}</span></span>
+</pre></td></tr></table></figure>
+
+<p><img src="http://user-image.logdown.io/user/412/blog/412/post/99828/qvZxc31IRNudZBNFdMna_CSSAnimationExample.gif" alt="CSSAnimationExample.gif"></p>
+<p>大體上製作一個CSS Animation就是這樣的一個流程，你也可以搭配CSS3的transform屬性去作出更多移動、翻轉、放大縮小的效果，甚至是3D翻轉喔！！</p>
+<p>如果不想自己coding出動畫，想藉助一些工具來做動畫，可以參考使用<a href="http://css3maker.com/" target="_blank">CSS 3.0 Maker</a>唷！</p>
+<h2>-webkit-前綴字</h2>
+<p>由於目前通用性的寫法在Chrome上還是不能用，請在CSS多複製一份@keyframes動畫與animation屬性，並在前面加上-webkit-前綴字，如下列範例所示：</p>
+<figure class="highlight lang-css"><figcaption><span>webkit.css</span></figcaption><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre></td><td class="code"><pre><span class="at_rule">@keyframes myAnimation
+</span>{
+	0% <span class="rules">{ <span class="rule"><span class="attribute">margin-top</span>:<span class="value"> <span class="number">0</span>px;</span></span> <span class="rule"><span class="attribute">background-color</span>:<span class="value"> yellow;</span></span><span class="rule">}</span></span>
+  50% <span class="rules">{ <span class="rule"><span class="attribute">margin-top</span>:<span class="value"> <span class="number">50</span>px;</span></span> <span class="rule"><span class="attribute">background-color</span>:<span class="value"> red;</span></span> <span class="rule">}</span></span>
+  100% <span class="rules">{ <span class="rule"><span class="attribute">margin-top</span>:<span class="value"> <span class="number">100</span>px;</span></span> <span class="rule"><span class="attribute">background-color</span>:<span class="value"> blue;</span></span> <span class="rule">}</span></span>
+}
+
+<span class="at_rule">@-webkit-keyframes myAnimation
+</span>{
+	0% <span class="rules">{ <span class="rule"><span class="attribute">margin-top</span>:<span class="value"> <span class="number">0</span>px;</span></span> <span class="rule"><span class="attribute">background-color</span>:<span class="value"> yellow;</span></span><span class="rule">}</span></span>
+  50% <span class="rules">{ <span class="rule"><span class="attribute">margin-top</span>:<span class="value"> <span class="number">50</span>px;</span></span> <span class="rule"><span class="attribute">background-color</span>:<span class="value"> red;</span></span> <span class="rule">}</span></span>
+  100% <span class="rules">{ <span class="rule"><span class="attribute">margin-top</span>:<span class="value"> <span class="number">100</span>px;</span></span> <span class="rule"><span class="attribute">background-color</span>:<span class="value"> blue;</span></span> <span class="rule">}</span></span>
+}
+
+<span class="tag">div</span><span class="rules">{
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">100</span>px;</span></span>
+  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">100</span>px;</span></span>
+  <span class="rule"><span class="attribute">animation</span>:<span class="value"> myAnimation <span class="number">3</span>s ease <span class="number">0</span>s infinite alternate;</span></span>
+  <span class="rule"><span class="attribute">-webkit-animation</span>:<span class="value"> myAnimation <span class="number">3</span>s ease <span class="number">0</span>s infinite alternate;</span></span>
+<span class="rule">}</span></span>
+</pre></td></tr></table></figure>
+
+<h2>參考資料</h2>
+<ol>
+<li>w3schools.com &gt; CSS3 @keyframes Rule：<a href="http://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp" target="_blank"><a href="http://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp">http://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp</a></a></li>
+<li>w3schools.com &gt; CSS3 animation Property：<a href="http://www.w3schools.com/cssref/css3_pr_animation.asp" target="_blank"><a href="http://www.w3schools.com/cssref/css3_pr_animation.asp">http://www.w3schools.com/cssref/css3_pr_animation.asp</a></a></li>
+<li>池水間 - 你需要知道的CSS3動畫技術 ::: 睡蓮‧池水間 - waterlily-lsl.com：<a href="http://waterlily-lsl.com/modules/article/view.article.php/c2/232/p2" target="_blank"><a href="http://waterlily-lsl.com/modules/article/view.article.php/c2/232/p2">http://waterlily-lsl.com/modules/article/view.article.php/c2/232/p2</a></a></li>
+<li>CSS 3.0 Maker：<a href="http://css3maker.com/" target="_blank"><a href="http://css3maker.com/">http://css3maker.com/</a></a></li>
+</ol>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+
+  <nav id="pagination">
+  
+  
+  <div class="clearfix"></div>
+</nav>
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:yoursite.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">Categories</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/javascript/Ajax/">Ajax</a><small>2</small></li>
+  
+    <li><a href="/categories/C#/">C#</a><small>1</small></li>
+  
+    <li><a href="/categories/Excel/">Excel</a><small>1</small></li>
+  
+    <li><a href="/categories/css/">css</a><small>1</small></li>
+  
+    <li><a href="/categories/html/">html</a><small>4</small></li>
+  
+    <li><a href="/categories/javascript/">javascript</a><small>2</small></li>
+  
+  </ul>
+</div>
+
+
+  
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2013 John Doe
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>

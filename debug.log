@@ -1,0 +1,38 @@
+date: 2013-10-02 08:30:02.014
+argv: node C:\Users\灆洢\AppData\Roaming\npm\node_modules\hexo\bin\hexo server
+os: Windows_NT 6.2.9200 win32 x64
+version:
+  hexo: 2.2.0
+  http_parser: 1.0
+  node: 0.10.19
+  v8: 3.14.5.9
+  ares: 1.9.0-DEV
+  uv: 0.10.17
+  zlib: 1.2.3
+  modules: 11
+  openssl: 1.0.1e
+---
+
+[debug] 08:28:46.216 Configuration file load successfully
+[debug] 08:28:46.224 Version info checked successfully
+[debug] 08:28:46.226 Loading the database...
+[debug] 08:28:47.644 Theme layout loaded
+[debug] 08:28:47.644 Start watching theme layout...
+[debug] 08:28:47.684 Theme source loaded
+[debug] 08:28:47.691 Theme configuration loaded
+[debug] 08:28:47.692 Start watching theme source...
+[debug] 08:28:47.703 Theme i18n loaded
+[debug] 08:28:47.731 Cache saved
+[info] 08:28:47.837 Hexo is running at localhost:4000/. Press Ctrl+C to stop.
+[debug] 08:28:56.135 Render index: 
+[create] 08:30:01.803 Source: _posts\2013-09-03-javascriptcross-domain-ajax-using-yql.md
+[error] 08:30:01.933 TypeError: Cannot set property '_content' of null
+TypeError: Cannot set property '_content' of null
+    at module.exports (C:\Users\灆洢\AppData\Roaming\npm\node_modules\hexo\lib\util\yfm.js:24:21)
+    at C:\Users\灆洢\AppData\Roaming\npm\node_modules\hexo\lib\plugins\processor\post.js:85:14
+    at C:\Users\灆洢\AppData\Roaming\npm\node_modules\hexo\node_modules\async\lib\async.js:422:17
+    at C:\Users\灆洢\AppData\Roaming\npm\node_modules\hexo\node_modules\async\lib\async.js:416:17
+    at Array.forEach (native)
+    at _each (C:\Users\灆洢\AppData\Roaming\npm\node_modules\hexo\node_modules\async\lib\async.js:32:24)
+    at Object.taskComplete (C:\Users\灆洢\AppData\Roaming\npm\node_modules\hexo\node_modules\async\lib\async.js:415:13)
+    at processImmediate [as _immediateCallback] (timers.js:330:15)

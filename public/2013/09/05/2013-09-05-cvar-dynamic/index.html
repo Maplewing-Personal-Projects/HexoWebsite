@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>#CSharp(C#)：var與dynamic | Hexo</title>
+  <meta name="author" content="John Doe">
+  
+  <meta name="description" content="這篇的出現頗神奇的，主要是因為剛好看到Javascript大全中提到duck-typing，突然想到其實C#也是可以玩玩duck-typing，結果就打算來寫這篇Orz…
+看到網路上似乎有人對於var和dynamic兩個的用法有點不了解，敝人就以自己沒用多久的經驗來告訴大家兩者的差別吧！
+var: ">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="#CSharp(C#)：var與dynamic"/>
+  <meta property="og:site_name" content="Hexo"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Hexo</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2013-09-05T15:49:00.000Z"><a href="/2013/09/05/2013-09-05-cvar-dynamic/">Sep 5 2013</a></time>
+      
+      
+  
+    <h1 class="title">#CSharp(C#)：var與dynamic</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>這篇的出現頗神奇的，主要是因為剛好看到Javascript大全中提到duck-typing，突然想到其實C#也是可以玩玩duck-typing，結果就打算來寫這篇Orz…</p>
+<p>看到網路上似乎有人對於var和dynamic兩個的用法有點不了解，敝人就以自己沒用多久的經驗來告訴大家兩者的差別吧！</p>
+<h2>var: 編譯時期決定型別 (C# 3.0)</h2>
+<p>var基本上來說，並沒有跳脫強型別的規範，也就是說，用var宣告出來的變數，依然還是屬於靜態型別的變數。var僅僅是讓你在宣告變數時，若可以明確判斷該變數為何種型別的話，就可以不必在變數宣告式寫上其型別，寫上var即可。</p>
+<figure class="highlight lang-cs"><figcaption><span>varExample.cs</span></figcaption><table><tr><td class="gutter"><pre>1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="keyword">var</span> s = <span class="string">"XD"</span>; <span class="comment">//由於可從後面指派的變數得知s為string型別，故可寫var</span>
+<span class="keyword">var</span> model = <span class="keyword">new</span> Model(); <span class="comment">//由於可從後面指派的變數得知model為Model型別，故可寫var</span>
+<span class="keyword">var</span> i; <span class="comment">//此處編譯時會出錯，因為無法確定i的型別為何。</span>
+s = <span class="number">1</span>; <span class="comment">//此處編譯時會出錯，因為s會是string型別的變數，無法儲存整數值</span>
+</pre></td></tr></table></figure>
+
+<p>var一般被稱作隱含型別，它其實會在編譯的時候，編譯器自動幫你判斷該變數為何種型別，並幫你在var處填上該型別的名稱，像上面的例子var s = “XD”在編譯的時候，會用string代替掉原本的var。</p>
+<p>舉一個簡單且常見的例子，當要對Dictionary型別去做foreach的瀏覽時，我們可直接使用var來代替掉用來當作每個單項的變數的宣告，底下範例：</p>
+<figure class="highlight lang-cs"><figcaption><span>dictionary.cs</span></figcaption><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre>Dictionary&lt;<span class="keyword">string</span>, <span class="keyword">int</span>&gt; dict = <span class="keyword">new</span> Dictionary&lt;<span class="keyword">string</span>, <span class="keyword">int</span>&gt;();
+<span class="comment">/* 增加dict的資料 */</span>
+
+<span class="keyword">foreach</span>( <span class="keyword">var</span> pair <span class="keyword">in</span> dict ){  <span class="comment">//原本應該寫foreach(KeyValuePair&lt;string, int&gt; pair in dict)</span>
+	<span class="comment">/* 對pair做事情 */</span>
+}
+</pre></td></tr></table></figure>
+
+<h2>dynamic：執行時期決定型別 (C# 4.0)</h2>
+<p>這個dynamic就是真正的動態變數，類似於Javascript、Python、Ruby…等等這些語言的變數，一個變數的型態決定於被指派的時候，底下是個範例：</p>
+<figure class="highlight lang-cs"><figcaption><span>dynamicExample.cs</span></figcaption><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre>dynamic dyn; <span class="comment">//宣告一個dynamic的變數</span>
+dyn = <span class="number">2</span>; <span class="comment">//可以指派整數進去</span>
+dyn += <span class="number">3</span>; <span class="comment">//當dyn內存的是整數時，此行會對</span>
+dyn = <span class="string">"XD"</span>; <span class="comment">//可以改變裡面存的變數為string型別的值</span>
+dyn += <span class="string">"XD"</span>; <span class="comment">//當dyn內存的是字串時，此行會對</span>
+dyn += <span class="number">3</span>; <span class="comment">//當dyn內存的是字串時，此行會在執行時期發生錯誤，但編譯會過。</span>
+dyn.HelloEveryBody(); <span class="comment">//當dyn內存的值具有HelloEveryBody方法可調用的話會對，但若沒有則在執行時期會錯，但編譯會過。</span>
+</pre></td></tr></table></figure>
+
+<p>由於變數可以動態的替換各種不同型態的值，編譯器會無法在編譯期找出錯誤，若要找出錯誤，只能等執行時期看看裡面的變數是否可做該運算而決定。</p>
+<p>而這個地方也說明了你可以用C#來做duck-typing的事情，底下用個簡單的範例作為收尾。</p>
+<figure class="highlight lang-cs"><figcaption><span>quack.cs</span></figcaption><table><tr><td class="gutter"><pre>1
+2
+3
+</pre></td><td class="code"><pre><span class="keyword">void</span> Quack(dynamic duck){
+	duck.quack(); <span class="comment">//只要傳進來的值具有quack方法可調用，則就會正確執行，不管其型別為何。</span>
+}
+</pre></td></tr></table></figure>
+
+<h2>參考資料</h2>
+<ol>
+<li>MSDN &gt; var (C# 參考)：<a href="http://msdn.microsoft.com/zh-tw/library/bb383973.aspx" target="_blank"><a href="http://msdn.microsoft.com/zh-tw/library/bb383973.aspx">http://msdn.microsoft.com/zh-tw/library/bb383973.aspx</a></a></li>
+<li>MSDN &gt; dynamic (C# 參考)：<a href="http://msdn.microsoft.com/zh-tw/library/dd264741.aspx" target="_blank"><a href="http://msdn.microsoft.com/zh-tw/library/dd264741.aspx">http://msdn.microsoft.com/zh-tw/library/dd264741.aspx</a></a></li>
+<li>What&#39;s the difference between dynamic(C# 4) and var? - Stack Overflow：<a href="http://stackoverflow.com/questions/961581/whats-the-difference-between-dynamicc-4-and-var" target="_blank"><a href="http://stackoverflow.com/questions/961581/whats-the-difference-between-dynamicc-4-and-var">http://stackoverflow.com/questions/961581/whats-the-difference-between-dynamicc-4-and-var</a></a></li>
+<li>var, dynamic 差別以及如何實作像 ViewBag 一樣的物件 - Kelp Code：<a href="http://kelp.phate.org/2011/11/var-dynamic-viewbag.html" target="_blank"><a href="http://kelp.phate.org/2011/11/var-dynamic-viewbag.html">http://kelp.phate.org/2011/11/var-dynamic-viewbag.html</a></a></li>
+</ol>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/C#/">C#</a>
+  </div>
+
+        
+        
+  <div class="addthis addthis_toolbox addthis_default_style">
+    
+      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+    
+    
+      <a class="addthis_button_tweet"></a>
+    
+    
+      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    
+    
+      <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+    
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:yoursite.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">Categories</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/javascript/Ajax/">Ajax</a><small>2</small></li>
+  
+    <li><a href="/categories/C#/">C#</a><small>1</small></li>
+  
+    <li><a href="/categories/Excel/">Excel</a><small>1</small></li>
+  
+    <li><a href="/categories/css/">css</a><small>1</small></li>
+  
+    <li><a href="/categories/html/">html</a><small>4</small></li>
+  
+    <li><a href="/categories/javascript/">javascript</a><small>2</small></li>
+  
+  </ul>
+</div>
+
+
+  
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2013 John Doe
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>
