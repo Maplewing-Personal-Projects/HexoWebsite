@@ -3,6 +3,7 @@ title: '#CSharp(C#)：var與dynamic'
 date: 2013-09-05 08:49
 comments: true
 categories: [CSharp]
+tags: [CSharp]
 ---
 這篇的出現頗神奇的，主要是因為剛好看到Javascript大全中提到duck-typing，突然想到其實C#也是可以玩玩duck-typing，結果就打算來寫這篇Orz...
 

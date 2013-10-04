@@ -2,7 +2,8 @@ layout: post
 title: '#Javascript：Cross Domain AJAX－使用PHP將網頁資訊轉JSONP'
 date: 2013-09-03 19:50
 comments: true
-categories: [javascript, Ajax]
+categories: [Javascript, Ajax]
+tags: [Javascript, Ajax]
 ---
 其實在使用[上篇](http://knightzone.logdown.com/posts/98927-javascriptcross-domain-ajax-using-yql)使用YQL來進行Cross Domain AJAX之前，我是先使用別人寫好的PHP網頁將要抓取之網站資訊轉成JSONP格式回來。
 

@@ -2,7 +2,8 @@ layout: post
 title: '#HTML：設定網頁編碼'
 date: 2013-09-08 16:46
 comments: true
-categories: [html]
+categories: [HTML]
+tags: [HTML]
 ---
 電腦裡面只能儲存0與1，並且透過二進位的方式用0與1儲存了數字，透過數字與文字的對應，電腦可以利用儲存數字的方式去儲存文字，並在顯示的時候透過對應表去找出該數字代表的文字為何，這樣的對應儲存模式就被稱為編碼。這世界上有很多語言，故編碼也有很多種，若使用的編碼不對，會導致網頁上出現我們有時候去瀏覽國外網站的時候常常會出現的亂碼現象，如下圖所示：
 ![html3-1.png](http://user-image.logdown.io/user/412/blog/412/post/138067/zHKS5sZoRK2oecYqNALa_html3-1.png)

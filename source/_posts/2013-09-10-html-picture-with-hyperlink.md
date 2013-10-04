@@ -2,7 +2,8 @@ layout: post
 title: '#HTML：圖片與超連結'
 date: 2013-09-10 20:12
 comments: true
-categories: [html]
+categories: [HTML]
+tags: [HTML]
 ---
 該如何在網頁內放置圖片以及超連結，我照慣例先使用一個範例讓你看，再來解釋這個範例的意義。
 ```html pictureHyperlinkExample.html

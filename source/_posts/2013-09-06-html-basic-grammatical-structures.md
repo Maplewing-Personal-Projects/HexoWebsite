@@ -2,7 +2,8 @@ layout: post
 title: '#HTML：基本語法結構'
 date: 2013-09-06 15:33
 comments: true
-categories: [html]
+categories: [HTML]
+tags: [HTML]
 ---
 由於開學之後會有教學Web技術的讀書會，故我現在就一邊整理HTML+CSS的資料，一邊PO上Logdown這裡讓大家看看。
 

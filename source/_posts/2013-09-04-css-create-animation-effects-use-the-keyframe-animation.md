@@ -2,7 +2,8 @@ layout: post
 title: '#CSS：製作動畫效果－使用keyframe與animation'
 date: 2013-09-04 08:40
 comments: true
-categories: [css]
+categories: [CSS]
+tags: [CSS]
 ---
 之前在網站上搞了一個Logo用的CSS3動畫，然後現在這個部落格的標題也用了CSS3動畫，故現在想來好好地整理一下跟CSS3動畫相關的功能，底下就開始說明該如何建立CSS3動畫。
 

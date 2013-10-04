@@ -3,6 +3,7 @@ title: '#Excel：將Excel試算表文件轉圖片'
 date: 2013-09-09 19:45
 comments: true
 categories: [Excel]
+tags: [Excel]
 ---
 基於昨天瑪莉羊問我該怎麼將課表的Excel檔轉成圖片，又剛好我要把成績單的Excel檔也要轉成圖片，所以我就查了一下開怎麼做，底下列出如何將試算表轉成圖片。
 

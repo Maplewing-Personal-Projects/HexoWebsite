@@ -2,7 +2,8 @@ layout: post
 title: '#Javascript：Cross Domain AJAX－使用YQL'
 date: 2013-09-03 01:13
 comments: true
-categories: [javascript, Ajax]
+categories: [Javascript, Ajax]
+tags: [Javascript, Ajax]
 ---
 在這次撰寫無名備份工具的途中，由於寫的是Web應用程式，我要抓取無名部落格上的資料就必須要使用到AJAX，但是基於安全性的問題，AJAX在回應非JSONP的情況下，僅支援同域名之間的抓取資料，那麼該怎樣才能跨越域名去抓取資料呢？
 

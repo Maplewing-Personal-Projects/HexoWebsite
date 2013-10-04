@@ -2,7 +2,8 @@ layout: post
 title: '#HTML：基本內文文章結構'
 date: 2013-09-07 10:07
 comments: true
-categories: [html]
+categories: [HTML]
+tags: [HTML]
 ---
 HTML文件裡面的內容大概如你在報紙上看到的一篇篇文章，一樣會具備標題、副標題、段落等等格式，我們就先給一個範例來表現一篇文章的HTML文件吧！
 
