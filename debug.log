@@ -1,4 +1,4 @@
-date: 2013-10-03 08:34:32.675
+date: 2013-10-05 21:00:16.036
 argv: c:\Program Files\nodejs\node.exe c:\Users\灆洢\AppData\Roaming\npm\node_modules\hexo\bin\hexo server
 os: Windows_NT 6.2.9200 win32 x64
 version:
@@ -13,70 +13,113 @@ version:
   openssl: 1.0.1e
 ---
 
-[debug] 08:27:08.002 Configuration file load successfully
-[debug] 08:27:08.014 Version info checked successfully
-[debug] 08:27:08.016 Loading the database...
-[debug] 08:27:10.061 Theme layout loaded
-[debug] 08:27:10.064 Start watching theme layout...
-[debug] 08:27:10.126 Theme source loaded
-[debug] 08:27:10.130 Theme configuration loaded
-[debug] 08:27:10.131 Start watching theme source...
-[debug] 08:27:10.254 Theme i18n loaded
-[debug] 08:27:10.430 Processed: _posts/2013-09-03-javascriptcross-domain-ajax-using-a-php-web-page-information-to-the-jsonp.md
-[debug] 08:27:10.473 Processed: _posts/2013-09-03-javascriptcross-domain-ajax-using-yql.md
-[debug] 08:27:10.520 Processed: _posts/2013-09-04-css-create-animation-effects-use-the-keyframe-animation.md
-[debug] 08:27:10.542 Processed: _posts/2013-09-05-cvar-dynamic.md
-[debug] 08:27:10.564 Processed: _posts/2013-09-06-html-basic-grammatical-structures.md
-[debug] 08:27:10.579 Processed: _posts/2013-09-07-html-text-structure.md
-[debug] 08:27:10.598 Processed: _posts/2013-09-08-html-set-the-page-encoding.md
-[debug] 08:27:10.615 Processed: _posts/2013-09-09-excel-the-excel-trial-and-error-file-transfer-pictures.md
-[debug] 08:27:10.630 Processed: _posts/2013-09-10-html-picture-with-hyperlink.md
-[debug] 08:27:11.454 Cache saved
-[info] 08:27:11.570 Hexo is running at localhost:4000/. Press Ctrl+C to stop.
-[debug] 08:27:13.315 Render index: 
-[debug] 08:27:28.038 Render index: 
-[update] 08:29:24.835 Theme source: js\phasebeam.js
-[create] 08:29:24.843 Theme source: js\phasebeam.js~RFf2db90e.TMP
-[delete] 08:29:25.843 Theme source: js\phasebeam.js~RFf2db90e.TMP
-[debug] 08:29:26.874 Render index: 
-[update] 08:29:38.248 Theme source: js\phasebeam.js
-[debug] 08:29:39.245 Render index: 
-[update] 08:29:39.270 Theme source: js\phasebeam.js
-[debug] 08:29:55.497 Render index: 
-[update] 08:29:55.812 Theme source: js\phasebeam.js
-[create] 08:29:55.823 Theme source: js\phasebeam.js~RFf2e31f7.TMP
-[delete] 08:29:57.093 Theme source: js\phasebeam.js~RFf2e31f7.TMP
-[update] 08:30:19.088 Theme source: js\phasebeam.js
-[create] 08:30:19.174 Theme source: js\phasebeam.js~RFf2e8c7b.TMP
-[debug] 08:30:19.581 Render index: 
-[update] 08:30:20.948 Theme source: js\phasebeam.js
-[delete] 08:30:20.988 Theme source: js\phasebeam.js~RFf2e8c7b.TMP
-[update] 08:30:27.169 Theme source: js\phasebeam.js
-[debug] 08:30:28.099 Render index: 
-[update] 08:30:28.366 Theme source: js\phasebeam.js
-[update] 08:31:09.621 Theme source: js\phasebeam.js
-[create] 08:31:09.635 Theme source: js\phasebeam.js~RFf2f52a9.TMP
-[debug] 08:31:09.798 Render index: 
-[delete] 08:31:11.147 Theme source: js\phasebeam.js~RFf2f52a9.TMP
-[update] 08:31:11.150 Theme source: js\phasebeam.js
-[update] 08:31:20.156 Theme source: js\phasebeam.js
-[update] 08:31:21.157 Theme source: js\phasebeam.js
-[update] 08:31:22.153 Theme source: js\phasebeam.js
-[update] 08:31:35.192 Theme source: js\phasebeam.js
-[debug] 08:31:35.866 Render index: 
-[create] 08:31:36.299 Theme source: js\phasebeam.js~RFf2fba4d.TMP
-[update] 08:31:36.308 Theme source: js\phasebeam.js
-[update] 08:31:37.227 Theme source: js\phasebeam.js
-[delete] 08:31:37.271 Theme source: js\phasebeam.js~RFf2fba4d.TMP
-[update] 08:32:19.215 Theme source: js\phasebeam.js
-[debug] 08:32:21.506 Render index: 
-[update] 08:32:32.042 Theme source: js\phasebeam.js
-[debug] 08:32:32.882 Render index: 
-[update] 08:32:33.204 Theme source: js\phasebeam.js
-[update] 08:33:56.379 Theme source: js\phasebeam.js
-[update] 08:33:57.373 Theme source: js\phasebeam.js
-[debug] 08:33:59.411 Render index: 
-[update] 08:34:31.886 Theme source: js\phasebeam.js
-[debug] 08:34:32.240 Render index: 
-[error] 08:34:32.655 Error: ENOENT, open 'c:\Users\灆洢\Blog\themes\light\source\js\phasebeam.js'
-Error: ENOENT, open 'c:\Users\灆洢\Blog\themes\light\source\js\phasebeam.js'
+[debug] 20:33:20.665 Configuration file load successfully
+[debug] 20:33:20.674 Version info checked successfully
+[debug] 20:33:20.677 Loading the database...
+[debug] 20:33:22.766 Theme layout loaded
+[debug] 20:33:22.777 Start watching theme layout...
+[debug] 20:33:22.905 Processed: favicon.ico
+[debug] 20:33:22.908 Processed: image/5GIsMHbfTbe3fGXGpTd8_209d47ef.png
+[debug] 20:33:22.909 Processed: image/9Ycmyz0iRtC7VjIzDqnH_html3-3.png
+[debug] 20:33:22.910 Processed: image/BMw2wcZ1QkqNDM6wADvw_html1-2.png
+[debug] 20:33:22.912 Processed: image/Dt8qrPkeSymD78W0DmB9_html2-3.png
+[debug] 20:33:22.913 Processed: image/GyeO6tYCTP6KqSzrKSCi_html4-1.png
+[debug] 20:33:22.915 Processed: image/hxoYB90RyVoypWLiGwRQ_html4-3.png
+[debug] 20:33:22.915 Processed: image/KiIKvWqDQLSzRSWF14BJ_html3-2.png
+[debug] 20:33:22.917 Processed: image/kQiNSVBnTKm0EWe0YSSr_html4-4.png
+[debug] 20:33:22.918 Processed: image/NXRkjm7lSPingeD2QxDC_html1-1.png
+[debug] 20:33:22.920 Processed: image/qRo1YIK2TUajq4ycFdBc_excel3.png
+[debug] 20:33:22.921 Processed: image/qvZxc31IRNudZBNFdMna_CSSAnimationExample.gif
+[debug] 20:33:22.926 Processed: image/REVdse98QKmT7WBtIids_html2-2.png
+[debug] 20:33:22.927 Processed: image/Rh8XEqqCS72Oyupr1yX7_excel2.png
+[debug] 20:33:22.930 Processed: image/RqgCMSFPQMB9R9Xnp26r_0de062e5.png
+[debug] 20:33:22.932 Processed: image/shNDc1b2SKCrx6rY6ut4_excel1.png
+[debug] 20:33:22.933 Processed: image/Thumbs.db
+[debug] 20:33:22.935 Processed: image/wpLKVi59SlecwcHkgmR2_html4-2.png
+[debug] 20:33:22.936 Processed: image/xXR4CuvHSUS9OvcCW4GD_html1-3.png
+[debug] 20:33:22.937 Processed: image/zHKS5sZoRK2oecYqNALa_html3-1.png
+[debug] 20:33:22.938 Processed: image/laHLnesBSPOkJMnJa0Dp_html2-1.png
+[debug] 20:33:22.954 Theme source loaded
+[debug] 20:33:22.959 Theme configuration loaded
+[debug] 20:33:22.959 Start watching theme source...
+[debug] 20:33:23.062 Theme i18n loaded
+[debug] 20:33:23.124 Processed: _posts/2006-04-17--making-progress-g-trent-lott-tl-v10-neptune-captives-released.md
+[debug] 20:33:23.148 Processed: _posts/2013-09-03-javascriptcross-domain-ajax-using-a-php-web-page-information-to-the-jsonp.md
+[debug] 20:33:23.169 Processed: _posts/2013-09-03-javascriptcross-domain-ajax-using-yql.md
+[debug] 20:33:23.184 Processed: _posts/2013-09-04-css-create-animation-effects-use-the-keyframe-animation.md
+[debug] 20:33:23.202 Processed: _posts/2013-09-05-cvar-dynamic.md
+[debug] 20:33:23.215 Processed: _posts/2013-09-06-html-basic-grammatical-structures.md
+[debug] 20:33:23.227 Processed: _posts/2013-09-07-html-text-structure.md
+[debug] 20:33:23.247 Processed: _posts/2013-09-08-html-set-the-page-encoding.md
+[debug] 20:33:23.260 Processed: _posts/2013-09-09-excel-the-excel-trial-and-error-file-transfer-pictures.md
+[debug] 20:33:23.275 Processed: _posts/2013-09-10-html-picture-with-hyperlink.md
+[debug] 20:33:23.287 Processed: _posts/2006-04-17--making-progress-patience-and-perseverance-g-garonne-tl20-desert-labyrinth-baked.md
+[debug] 20:33:24.628 Cache saved
+[info] 20:33:24.745 Hexo is running at localhost:4000/. Press Ctrl+C to stop.
+[debug] 20:34:18.160 Render index: 
+[debug] 20:34:26.527 Render category: categories/製作進度/
+[debug] 20:37:14.985 Render post: 2013/09/08/2013-09-08-html-set-the-page-encoding/
+[update] 20:41:55.428 Theme source: css\_partial\article.styl
+[update] 20:41:57.424 Theme source: css\_partial\article.styl
+[debug] 20:42:11.947 Render post: 2013/09/08/2013-09-08-html-set-the-page-encoding/
+[create] 20:42:36.922 Theme source: css\_partial\article.styl~RF885542a.TMP
+[update] 20:42:37.890 Theme source: css\_partial\article.styl
+[delete] 20:42:37.921 Theme source: css\_partial\article.styl~RF885542a.TMP
+[debug] 20:42:39.224 Render post: 2013/09/08/2013-09-08-html-set-the-page-encoding/
+[update] 20:43:09.242 Theme source: css\_partial\article.styl
+[update] 20:43:10.237 Theme source: css\_partial\article.styl
+[debug] 20:43:16.240 Render post: 2013/09/08/2013-09-08-html-set-the-page-encoding/
+[update] 20:44:02.468 Theme source: css\_partial\article.styl
+[update] 20:44:03.450 Theme source: css\_partial\article.styl
+[update] 20:44:04.444 Theme source: css\_partial\article.styl
+[debug] 20:44:16.397 Render post: 2013/09/08/2013-09-08-html-set-the-page-encoding/
+[update] 20:44:39.506 Theme source: css\_partial\article.styl
+[debug] 20:44:40.656 Render post: 2013/09/08/2013-09-08-html-set-the-page-encoding/
+[update] 20:44:42.166 Theme source: css\_partial\article.styl
+[debug] 20:44:50.244 Render post: 2013/09/08/2013-09-08-html-set-the-page-encoding/
+[update] 20:45:01.013 Theme source: css\_partial\article.styl
+[update] 20:45:02.019 Theme source: css\_partial\article.styl
+[debug] 20:45:02.709 Render post: 2013/09/08/2013-09-08-html-set-the-page-encoding/
+[update] 20:45:03.325 Theme source: css\_partial\article.styl
+[update] 20:45:11.366 Theme source: css\_partial\article.styl
+[update] 20:45:12.421 Theme source: css\_partial\article.styl
+[update] 20:45:13.395 Theme source: css\_partial\article.styl
+[update] 20:45:16.413 Theme source: css\_partial\article.styl
+[debug] 20:45:18.000 Render post: 2013/09/08/2013-09-08-html-set-the-page-encoding/
+[update] 20:48:47.881 Theme source: css\_partial\article.styl
+[update] 20:48:48.885 Theme source: css\_partial\article.styl
+[debug] 20:48:51.550 Render post: 2013/09/08/2013-09-08-html-set-the-page-encoding/
+[delete] 20:49:09.631 Theme source: css\_partial\article.styl
+[create] 20:49:09.672 Theme source: css\_partial\article.styl
+[create] 20:49:09.682 Theme source: css\_partial\article.styl~RF88b51fa.TMP
+[delete] 20:49:10.741 Theme source: css\_partial\article.styl~RF88b51fa.TMP
+[create] 20:49:10.817 Theme source: css\_partial\article.styl~RF88b5585.TMP
+[update] 20:49:11.661 Theme source: css\_partial\article.styl
+[delete] 20:49:11.805 Theme source: css\_partial\article.styl~RF88b5585.TMP
+[delete] 20:49:52.708 Theme source: css\_partial\article.styl
+[create] 20:49:52.731 Theme source: css\_partial\article.styl~RF88bfa7f.TMP
+[create] 20:49:53.721 Theme source: css\_partial\article.styl
+[create] 20:49:53.742 Theme source: css\_partial\article.styl~RF88bfe38.TMP
+[delete] 20:49:53.750 Theme source: css\_partial\article.styl~RF88bfa7f.TMP
+[delete] 20:49:54.720 Theme source: css\_partial\article.styl~RF88bfe38.TMP
+[update] 20:49:54.732 Theme source: css\_partial\article.styl
+[debug] 20:49:58.787 Render post: 2013/09/08/2013-09-08-html-set-the-page-encoding/
+[update] 20:51:06.061 Theme source: css\_partial\article.styl
+[error] 20:51:06.197 HexoError: Theme source load failed: css\_partial\article.styl~RF88d1862.TMP
+Error: ENOENT, stat 'c:\Users\灆洢\Blog\themes\light\source\css\_partial\article.styl~RF88d1862.TMP'
+
+[update] 20:51:07.028 Theme source: css\_partial\article.styl
+[update] 20:51:07.964 Theme source: css\_partial\article.styl
+[debug] 20:51:10.236 Render post: 2013/09/08/2013-09-08-html-set-the-page-encoding/
+[debug] 20:51:24.417 Render index: 
+[create] 21:00:15.834 Source: _posts\2006-04-18--making-progress-g-trent-lott-forest-goddess-tl-v30-baked.md
+[error] 21:00:15.978 TypeError: Cannot set property '_content' of null
+TypeError: Cannot set property '_content' of null
+    at module.exports (c:\Users\灆洢\AppData\Roaming\npm\node_modules\hexo\lib\util\yfm.js:24:21)
+    at c:\Users\灆洢\AppData\Roaming\npm\node_modules\hexo\lib\plugins\processor\post.js:85:14
+    at c:\Users\灆洢\AppData\Roaming\npm\node_modules\hexo\node_modules\async\lib\async.js:422:17
+    at c:\Users\灆洢\AppData\Roaming\npm\node_modules\hexo\node_modules\async\lib\async.js:416:17
+    at Array.forEach (native)
+    at _each (c:\Users\灆洢\AppData\Roaming\npm\node_modules\hexo\node_modules\async\lib\async.js:32:24)
+    at Object.taskComplete (c:\Users\灆洢\AppData\Roaming\npm\node_modules\hexo\node_modules\async\lib\async.js:415:13)
+    at processImmediate [as _immediateCallback] (timers.js:330:15)
