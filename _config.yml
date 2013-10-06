@@ -82,3 +82,7 @@ deploy:
   type: github
   repository: git@github.com:sinmaplewing/sinmaplewing.github.io.git
   branch: master
+
+plugins:
+- hexo-generator-feed
+- hexo-generator-sitemap
