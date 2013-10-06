@@ -9,13 +9,13 @@ tags: [Excel]
 
 ## 轉換步驟
 1. 首先先開啟Excel檔案，並將要轉成圖片的範圍框起來。
-![excel1.png](http://user-image.logdown.io/user/412/blog/412/post/138275/shNDc1b2SKCrx6rY6ut4_excel1.png)
+![excel1.png](/image/shNDc1b2SKCrx6rY6ut4_excel1.png)
 
 2. 再來對該範圍按下Ctrl+C或是點擊滑鼠右鍵選擇複製。
-![excel2.png](http://user-image.logdown.io/user/412/blog/412/post/138275/Rh8XEqqCS72Oyupr1yX7_excel2.png)
+![excel2.png](/image/Rh8XEqqCS72Oyupr1yX7_excel2.png)
 
 3. 最後在小畫家(或是其他繪圖軟體)裡面按下Ctrl+V貼上後儲存成圖片即可。
-![excel3.png](http://user-image.logdown.io/user/412/blog/412/post/138275/qRo1YIK2TUajq4ycFdBc_excel3.png)
+![excel3.png](/image/qRo1YIK2TUajq4ycFdBc_excel3.png)
 
 ## 參考資料
 1. How to Save an Excel Spreadsheet As an Image or Picture | eHow：[http://www.ehow.com/how_5968604_save-excel-spreadsheet-image-picture.html](http://www.ehow.com/how_5968604_save-excel-spreadsheet-image-picture.html)

@@ -19,7 +19,7 @@ tags: [HTML]
   </body>
 </html>
 ```
-![html1-1.png](http://user-image.logdown.io/user/412/blog/412/post/110310/NXRkjm7lSPingeD2QxDC_html1-1.png)
+![html1-1.png](/image/NXRkjm7lSPingeD2QxDC_html1-1.png)
 底下我們開始對這個範例進行講解。
 
 ## HTML版本宣告
@@ -61,7 +61,7 @@ head標籤內放置的是此HTML文件的整體資訊，像是head內一定會�
 </head>
 ...
 ```
-![html1-2.png](http://user-image.logdown.io/user/412/blog/412/post/110310/BMw2wcZ1QkqNDM6wADvw_html1-2.png)
+![html1-2.png](/image/BMw2wcZ1QkqNDM6wADvw_html1-2.png)
 
 body標籤內則是放置網頁的內容，打在這裡面的內容都會呈現在網頁上。
 ```html body.html
@@ -71,7 +71,7 @@ body標籤內則是放置網頁的內容，打在這裡面的內容都會呈現�
 </body>
 ...
 ```
-![html1-3.png](http://user-image.logdown.io/user/412/blog/412/post/110310/xXR4CuvHSUS9OvcCW4GD_html1-3.png)
+![html1-3.png](/image/xXR4CuvHSUS9OvcCW4GD_html1-3.png)
 
 ## 註解
 你可以利用`<!-- 註解文字 -->`放置註解，註解文字並不會顯示在網頁上，僅提供你在開發網頁的時候能夠方便了解該段程式碼的含意為何。

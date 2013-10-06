@@ -27,7 +27,7 @@ HTML文件裡面的內容大概如你在報紙上看到的一篇篇文章，一�
   </body>
 </html>
 ```
-![html2-1.png](http://user-image.logdown.io/user/412/blog/412/post/110386/laHLnesBSPOkJMnJa0Dp_html2-1.png)
+![html2-1.png](/image/laHLnesBSPOkJMnJa0Dp_html2-1.png)
 
 ## 標題表示用標籤
 使用h1~h6標籤分別可以表示從大到小的1級到6級的標題，當一篇文章出現標題的時候，可以使用此標籤來表示標題的部分。底下是h1~h6各個標籤範例：
@@ -43,7 +43,7 @@ HTML文件裡面的內容大概如你在報紙上看到的一篇篇文章，一�
 </body>
 ...
 ```
-![html2-2.png](http://user-image.logdown.io/user/412/blog/412/post/110386/REVdse98QKmT7WBtIids_html2-2.png)
+![html2-2.png](/image/REVdse98QKmT7WBtIids_html2-2.png)
 
 ## 水平線標籤
 若要使用水平線來分隔文章，可以使用hr標籤來表示，hr為一個無包內容的標籤，可以寫作`<hr />`。
@@ -74,7 +74,7 @@ HTML文件裡面的內容大概如你在報紙上看到的一篇篇文章，一�
 </body>
 ...
 ```
-![html2-3.png](http://user-image.logdown.io/user/412/blog/412/post/110386/Dt8qrPkeSymD78W0DmB9_html2-3.png)
+![html2-3.png](/image/Dt8qrPkeSymD78W0DmB9_html2-3.png)
 
 ## 參考資料
 1. html教學 > 第03章。常用標籤：[http://m7.dfps.tp.edu.tw/chen/main5/ahtml/03.asp](http://m7.dfps.tp.edu.tw/chen/main5/ahtml/03.asp)

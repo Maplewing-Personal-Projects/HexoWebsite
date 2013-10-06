@@ -71,7 +71,7 @@ div{
   animation: myAnimation 3s ease 0s infinite alternate;
 }
 ```
-![CSSAnimationExample.gif](http://user-image.logdown.io/user/412/blog/412/post/99828/qvZxc31IRNudZBNFdMna_CSSAnimationExample.gif)
+![CSSAnimationExample.gif](/image/qvZxc31IRNudZBNFdMna_CSSAnimationExample.gif)
 
 大體上製作一個CSS Animation就是這樣的一個流程，你也可以搭配CSS3的transform屬性去作出更多移動、翻轉、放大縮小的效果，甚至是3D翻轉喔！！
 

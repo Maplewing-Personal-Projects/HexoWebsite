@@ -6,7 +6,7 @@ categories: [HTML]
 tags: [HTML]
 ---
 電腦裡面只能儲存0與1，並且透過二進位的方式用0與1儲存了數字，透過數字與文字的對應，電腦可以利用儲存數字的方式去儲存文字，並在顯示的時候透過對應表去找出該數字代表的文字為何，這樣的對應儲存模式就被稱為編碼。這世界上有很多語言，故編碼也有很多種，若使用的編碼不對，會導致網頁上出現我們有時候去瀏覽國外網站的時候常常會出現的亂碼現象，如下圖所示：
-![html3-1.png](http://user-image.logdown.io/user/412/blog/412/post/138067/zHKS5sZoRK2oecYqNALa_html3-1.png)
+![html3-1.png](/image/zHKS5sZoRK2oecYqNALa_html3-1.png)
 
 因此我們必須要確定我們製作出來的網站是用什麼編碼方式儲存的，並且要試著從網頁裡去設定其網頁編碼，讓瀏覽器可以用正確的編碼方式去瀏覽該網站。
 
@@ -28,10 +28,10 @@ tags: [HTML]
 ## 如何儲存UTF-8格式的網頁
 
 如果使用的是記事本來編輯網頁，可在儲存檔案的時候，點擊底下的編碼的選項，選擇UTF-8即可，如下圖所示：
-![html3-2.png](http://user-image.logdown.io/user/412/blog/412/post/138067/KiIKvWqDQLSzRSWF14BJ_html3-2.png)
+![html3-2.png](/image/KiIKvWqDQLSzRSWF14BJ_html3-2.png)
 
 如果是使用Notepad++來編輯網頁，可在上面工具列的［編碼］裡面選擇［轉換至UTF-8碼格式(檔首無BOM)］即可，如下圖所示：
-![html3-3.png](http://user-image.logdown.io/user/412/blog/412/post/138067/9Ycmyz0iRtC7VjIzDqnH_html3-3.png)
+![html3-3.png](/image/9Ycmyz0iRtC7VjIzDqnH_html3-3.png)
 
 ## 用meta標籤來設定該網頁的編碼
 meta標籤在HTML文件中，是用來設定該文件的meta資料，除了可以用來設定編碼外，還可以設定很多其他跟網頁有關的資料，不過在這裡我只先提該如何設定網頁的編碼。

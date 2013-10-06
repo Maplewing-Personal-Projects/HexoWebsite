@@ -29,7 +29,7 @@ tags: [HTML]
   </body>
 </html>
 ```
-![html4-1.png](http://user-image.logdown.io/user/412/blog/412/post/138427/GyeO6tYCTP6KqSzrKSCi_html4-1.png)
+![html4-1.png](/image/GyeO6tYCTP6KqSzrKSCi_html4-1.png)
 
 ## img標籤：放置圖片
 如果要在網頁中放置圖片，可使用img標籤，它具有兩個屬性必須設定，一個為src屬性，是放你的圖片的路徑；另外一個則是alt屬性，是放你的圖片的說明文字，也有可能會被用於圖片連結不到時的替代文字。
@@ -74,13 +74,13 @@ tags: [HTML]
 相對路徑是指從你所在的位置該如何走到欲連結到的檔案的位置的路徑表示，底下用幾張我以前的ppt來解說。
 
 假設該網頁名稱為second6.html，若要連結到與網頁在同資料夾的圖片，則直接打上該名字即可。
-![html4-2.png](http://user-image.logdown.io/user/412/blog/412/post/138427/wpLKVi59SlecwcHkgmR2_html4-2.png)
+![html4-2.png](/image/wpLKVi59SlecwcHkgmR2_html4-2.png)
 
 若要連結到位於跟網頁同資料夾的picture資料夾內的圖片，則打上picture，後面再加上斜線分隔，再打上圖片名稱。如果資料夾非常多層則是一樣的道理，可以寫成`同層資料夾/內層資料夾1/內層資料夾2/...以此類推/圖片名稱`。
-![html4-3.png](http://user-image.logdown.io/user/412/blog/412/post/138427/hxoYB90RyVoypWLiGwRQ_html4-3.png)
+![html4-3.png](/image/hxoYB90RyVoypWLiGwRQ_html4-3.png)
 
 若要連結的圖片在網頁所在的資料夾的上一層，則使用..去表示。
-![html4-4.png](http://user-image.logdown.io/user/412/blog/412/post/138427/kQiNSVBnTKm0EWe0YSSr_html4-4.png)
+![html4-4.png](/image/kQiNSVBnTKm0EWe0YSSr_html4-4.png)
 
 ### 絕對路徑
 絕對路徑通常是為了連結外部的資料，不在本網站內的資料去使用，因為不是本站的資料，所以無法使用相對路徑去連結到，只能使用絕對路徑去連結。若使用相對路徑，則網頁搬到不同的地方會連結到的位置會不同，端看該網頁的位置在何處；但若使用絕對路徑，則網頁不管搬到不同的地方則連結到的地方會是相同的。若你的資料會跟你的網站一起搬動，建議使用相對路徑；若不會，則使用絕對路徑。
