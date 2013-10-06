@@ -6,6 +6,7 @@ categories: [製作進度]
 tags: [製作進度]
 ---
 ![TL2.0.png](/image/RqgCMSFPQMB9R9Xnp26r_0de062e5.png)
+
 老實說，做完這款時，我也沒有去測試很多，所以BUG可能很多吧！
 
 不過到時候我會提供下載點的，放心吧！

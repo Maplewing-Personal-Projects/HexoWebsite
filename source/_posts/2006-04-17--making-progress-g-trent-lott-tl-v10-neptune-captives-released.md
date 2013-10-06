@@ -6,6 +6,7 @@ categories: [製作進度]
 tags: [製作進度]
 ---
 ![TL1.0png](/image/5GIsMHbfTbe3fGXGpTd8_209d47ef.png)
+
 本城其實最早做的遊戲為克洛特TL，但那款太惡搞，現在我重新呈現克洛特的TL，為早期的作品做個Good Ending。
 
 預定計畫:
