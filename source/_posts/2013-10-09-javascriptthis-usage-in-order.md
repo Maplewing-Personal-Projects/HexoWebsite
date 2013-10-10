@@ -89,7 +89,7 @@ var obj = {
 obj.f(); // (1)
 
 var fOut = obj.f;
-fOut(); //(2)
+fOut(); // (2)
 
 var obj2 = {
 	x: 30,
