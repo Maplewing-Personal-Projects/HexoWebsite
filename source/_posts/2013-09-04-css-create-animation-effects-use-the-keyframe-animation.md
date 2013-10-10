@@ -13,7 +13,7 @@ tags: [CSS]
 @keyframes 動畫名稱 {
 	關鍵影格選擇器1 { 眾多css樣式; }
 	關鍵影格選擇器2 { 眾多css樣式; }
-  ...
+	...
 }
 ```
 概念類似Flash當中的關鍵影格，在動畫內建立各個位置的時候，其css樣式為何，到最後就交由瀏覽器去做補間效果。
@@ -26,15 +26,15 @@ tags: [CSS]
 @keyframes myAnimation
 {
 	0% { margin-top: 0px; background-color: yellow;}
-  50% { margin-top: 50px; background-color: red; }
-  100% { margin-top: 100px; background-color: blue; }
+	50% { margin-top: 50px; background-color: red; }
+	100% { margin-top: 100px; background-color: blue; }
 }
 ```
 ```css from-to-selector.css
 @keyframes myAnimationFromTo
 {
-  from { margin-top: 20px; color: yellow; }
-  to { margin-top: 80px; color: blue; }
+	from { margin-top: 20px; color: yellow; }
+	to { margin-top: 80px; color: blue; }
 }
 ```
 建立好@keyframes動畫內容後，接著就要在欲放置該動畫的CSS樣式表內加入animation屬性。
@@ -66,9 +66,9 @@ timing-function有linear、ease、ease-in、ease-out、ease-in-out可以用，�
 底下用個範例去使用上面定義的myAnimation動畫：
 ```css div-animation.css
 div{
-  width: 100px;
-  height: 100px;
-  animation: myAnimation 3s ease 0s infinite alternate;
+	width: 100px;
+	height: 100px;
+	animation: myAnimation 3s ease 0s infinite alternate;
 }
 ```
 ![CSSAnimationExample.gif](/image/qvZxc31IRNudZBNFdMna_CSSAnimationExample.gif)
@@ -83,22 +83,22 @@ div{
 @keyframes myAnimation
 {
 	0% { margin-top: 0px; background-color: yellow;}
-  50% { margin-top: 50px; background-color: red; }
-  100% { margin-top: 100px; background-color: blue; }
+	50% { margin-top: 50px; background-color: red; }
+	100% { margin-top: 100px; background-color: blue; }
 }
 
 @-webkit-keyframes myAnimation
 {
 	0% { margin-top: 0px; background-color: yellow;}
-  50% { margin-top: 50px; background-color: red; }
-  100% { margin-top: 100px; background-color: blue; }
+	50% { margin-top: 50px; background-color: red; }
+	100% { margin-top: 100px; background-color: blue; }
 }
 
 div{
-  width: 100px;
-  height: 100px;
-  animation: myAnimation 3s ease 0s infinite alternate;
-  -webkit-animation: myAnimation 3s ease 0s infinite alternate;
+	width: 100px;
+	height: 100px;
+	animation: myAnimation 3s ease 0s infinite alternate;
+	-webkit-animation: myAnimation 3s ease 0s infinite alternate;
 }
 ```
 

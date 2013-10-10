@@ -11,12 +11,12 @@ tags: [HTML]
 ```html firstWebsite.html
 <!DOCTYPE html>
 <html>
-  <head>
-  	<title>這裡是標題的部分</title>
-  </head>
-  <body>
-  	這裡是內容的部分。 <!-- 此為註解 -->
-  </body>
+	<head>
+		<title>這裡是標題的部分</title>
+	</head>
+	<body>
+		這裡是內容的部分。 <!-- 此為註解 -->
+	</body>
 </html>
 ```
 ![html1-1.png](/image/NXRkjm7lSPingeD2QxDC_html1-1.png)
@@ -44,12 +44,12 @@ HTML文件是以一堆標籤形成的元素所組合而成的，標籤即是使�
 每一份html文件的第一個最底部的標籤必定是html標籤，而html標籤的內容通常又會分成兩個標籤，一個是head標籤，另外一個是body標籤。
 ```html structure.html
 <html>
-  <head>
-  	...
-  </head>
-  <body>
-  	...
-  </body>
+	<head>
+		...
+	</head>
+	<body>
+		...
+	</body>
 </html>
 ```
 

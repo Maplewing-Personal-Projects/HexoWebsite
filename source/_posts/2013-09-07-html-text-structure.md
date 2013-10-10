@@ -10,21 +10,21 @@ HTML文件裡面的內容大概如你在報紙上看到的一篇篇文章，一�
 ```html article.html
 <!DOCTYPE html>
 <html>
-  <head>
-  	<title>文章範例</title>
-  </head>
-  <body>
-  	<h1>主要標題</h1>
-    <h2>副標題</h2>
-    <hr />
-    <p>第一個段落</p>
-    <p>第二個段落</p>
-    <p>
-      <em>斜體強調</em>，<br />
-      <strong>粗體強調</strong>，<br />
-      <em><strong>粗斜體強調</strong></em>
-    </p>
-  </body>
+	<head>
+		<title>文章範例</title>
+	</head>
+	<body>
+		<h1>主要標題</h1>
+		<h2>副標題</h2>
+		<hr />
+		<p>第一個段落</p>
+		<p>第二個段落</p>
+		<p>
+			<em>斜體強調</em>，<br />
+			<strong>粗體強調</strong>，<br />
+			<em><strong>粗斜體強調</strong></em>
+		</p>
+	</body>
 </html>
 ```
 ![html2-1.png](/image/laHLnesBSPOkJMnJa0Dp_html2-1.png)
@@ -34,12 +34,12 @@ HTML文件裡面的內容大概如你在報紙上看到的一篇篇文章，一�
 ```html header1to6.html
 ...
 <body>
-  <h1>一級標題</h1>
-  <h2>二級標題</h2>
-  <h3>三級標題</h3>
-  <h4>四級標題</h4>
-  <h5>五級標題</h5>
-  <h6>六級標題</h6>
+	<h1>一級標題</h1>
+	<h2>二級標題</h2>
+	<h3>三級標題</h3>
+	<h4>四級標題</h4>
+	<h5>五級標題</h5>
+	<h6>六級標題</h6>
 </body>
 ...
 ```
@@ -66,11 +66,11 @@ HTML文件裡面的內容大概如你在報紙上看到的一篇篇文章，一�
 ```html pre.html
 ...
 <body>
-  <pre>
+	<pre>
 這是一篇很長的文章，
 害我懶的用br和p標籤，
 真是抱歉！
-  </pre>
+	</pre>
 </body>
 ...
 ```
