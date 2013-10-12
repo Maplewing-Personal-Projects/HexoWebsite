@@ -110,4 +110,4 @@ tags: [HTML]
 ##參考資料
 1. w3schools.com &gt; HTML Tables：[http://www.w3schools.com/html/html_tables.asp](http://www.w3schools.com/html/html_tables.asp)
 2. w3schools.com &gt; HTML &lt;table&gt; Tag：[http://www.w3schools.com/tags/tag_table.asp](http://www.w3schools.com/tags/tag_table.asp)
-3. HTML表格（table）的常用語法：[http://tzoyiing.pixnet.net/blog/post/22374838-%E3%80%90%E6%95%99%E5%AD%B8%E3%80%91html%E8%A1%A8%E6%A0%BC%EF%BC%88table%EF%BC%89%E7%9A%84%E5%B8%B8%E7%94%A8%E8%AA%9E%E6%B3%95%EF%BC%88part.i%EF%BC%89](http://tzoyiing.pixnet.net/blog/post/22374838-%E3%80%90%E6%95%99%E5%AD%B8%E3%80%91html%E8%A1%A8%E6%A0%BC%EF%BC%88table%EF%BC%89%E7%9A%84%E5%B8%B8%E7%94%A8%E8%AA%9E%E6%B3%95%EF%BC%88part.i%EF%BC%89)
+3. HTML表格（table）的常用語法：[http://www.pt.ntu.edu.tw/hmchai/ptcomputer03_2/hHTML/HTMLtable.htm](http://www.pt.ntu.edu.tw/hmchai/ptcomputer03_2/hHTML/HTMLtable.htm)
