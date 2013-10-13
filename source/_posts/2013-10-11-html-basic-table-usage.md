@@ -11,7 +11,7 @@ tags: [HTML]
 
 ## 行和列、欄和列、Row & Column
 首先要先能夠分別［行和列］、［欄和列］、［Row & Column］，這樣在表格的教學文中才不會出現問題，首先先看底下的圖來進行分辨：
-![Row & Column](http://user-image.logdown.io/user/412/blog/412/post/146487/hrFU4NcsTd2XnSS7psvg_slide-22-638.jpg)
+![Row & Column](/image/hrFU4NcsTd2XnSS7psvg_slide-22-638.jpg)
 
 或許各位會記不起來行和列的分別，所以我利用以前在赫哲補習班學到的方法來告訴大家，透過行與列的第一個筆畫即可分別，`行`的第一個筆畫偏上下，而`列`的第一個筆畫為左右，故可藉此來分別，不過中國大陸的行和列是與我們相反的，還請各位多多注意。
 
@@ -50,7 +50,7 @@ tags: [HTML]
   </body>
 </html>
 ```
-![table01.png](http://user-image.logdown.io/user/412/blog/412/post/146487/sN65znISLmbf66BEF316_table01.png)
+![table01.png](/image/sN65znISLmbf66BEF316_table01.png)
 
 看到程式碼這麼長，大家應該都昏了吧！我來慢慢解釋給各位聽吧！
 
@@ -99,7 +99,7 @@ tags: [HTML]
   </body>
 </html>
 ```
-![table02.png](http://user-image.logdown.io/user/412/blog/412/post/146487/qpjHGljxQUG6VIBU03Hw_table02.png)
+![table02.png](/image/qpjHGljxQUG6VIBU03Hw_table02.png)
 
 我們可以在td標籤與th標籤插入colspan與rowspan屬性去給予要合併的格數。
 

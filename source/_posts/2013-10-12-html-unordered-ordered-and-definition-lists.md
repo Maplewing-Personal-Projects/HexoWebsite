@@ -27,7 +27,7 @@ tags: [HTML]
   </body>
 </html>
 ```
-![list01.png](http://user-image.logdown.io/user/412/blog/412/post/146566/oei6c5rDR30zTXQ2OKNb_list01.png)
+![list01.png](/image/oei6c5rDR30zTXQ2OKNb_list01.png)
 
 無序清單使用`<ul>...</ul>`將整個清單包起來，每一項使用`<li>...<li>`即可，效果就跟用Word按的項目符號及編號做出來的差不多。
 
@@ -51,7 +51,7 @@ tags: [HTML]
   </body>
 </html>
 ```
-![list02.png](http://user-image.logdown.io/user/412/blog/412/post/146566/J0fvAwtITeprP45zFWS5_list02.png)
+![list02.png](/image/J0fvAwtITeprP45zFWS5_list02.png)
 
 有序清單的使用與無序清單差不多，僅僅只是將ul(unordered list)標籤換成了ol(ordered list)標籤，效果就從原本的項目符號換成了數字編號。
 
@@ -77,7 +77,7 @@ HTML5提供了新的屬性，可讓ol反向計算數值，利用`reversed`屬性
   </body>
 </html>
 ```
-![list03.png](http://user-image.logdown.io/user/412/blog/412/post/146566/Pli6ycbqRBCM3nYpi7Sk_list03.png)
+![list03.png](/image/Pli6ycbqRBCM3nYpi7Sk_list03.png)
 
 與前述兩種清單不同的地方在於，整個清單用`<dl>...</dl>`包住，每一項從原本僅有一個li標籤，換成dt和dd各一個標籤，dt表示的是欲解釋的項目，dd表示的是欲解釋的內容，因為是解釋的內容，所以dd標籤在排版上會做自動縮排。
 
@@ -112,7 +112,7 @@ HTML5提供了新的屬性，可讓ol反向計算數值，利用`reversed`屬性
   </body>
 </html>
 ```
-![list04.png](http://user-image.logdown.io/user/412/blog/412/post/146566/e9DpeeMqRWyGsKo6NtQZ_list04.png)
+![list04.png](/image/e9DpeeMqRWyGsKo6NtQZ_list04.png)
 
 上面對於每一項li標籤內又在加入了另外一個清單去做描述，而清單內的清單瀏覽器會自動在排版上去做縮排，這是很方便可以做多層巢狀清單的用法，各位也可以自己試試看如果換成用ol和dl又會發生什麼事情。
 
