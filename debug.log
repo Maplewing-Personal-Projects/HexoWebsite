@@ -1,5 +1,5 @@
-date: 2013-10-06 21:29:11.063
-argv: c:\Program Files\nodejs\node.exe c:\Users\灆洢\AppData\Roaming\npm\node_modules\hexo\bin\hexo server
+date: 2013-10-13 10:04:18.042
+argv: c:\Program Files\nodejs\node.exe c:\Users\灆洢\AppData\Roaming\npm\node_modules\hexo\bin\hexo deploy
 os: Windows_NT 6.2.9200 win32 x64
 version:
   hexo: 2.2.0
@@ -13,85 +13,17 @@ version:
   openssl: 1.0.1e
 ---
 
-[debug] 21:26:33.240 Configuration file load successfully
-[debug] 21:26:33.257 Version info checked successfully
-[debug] 21:26:33.273 Plugin loaded successfully: hexo-generator-feed
-[debug] 21:26:33.289 Plugin loaded successfully: hexo-generator-sitemap
-[debug] 21:26:33.291 Loading the database...
-[debug] 21:26:34.909 Theme layout loaded
-[debug] 21:26:34.910 Start watching theme layout...
-[debug] 21:26:35.087 Theme configuration loaded
-[debug] 21:26:35.125 Processed: favicon.ico
-[debug] 21:26:35.127 Processed: image/33PreQtRli4WewMujGFq_b1459390.png
-[debug] 21:26:35.129 Processed: image/5GIsMHbfTbe3fGXGpTd8_209d47ef.png
-[debug] 21:26:35.131 Processed: image/9Ycmyz0iRtC7VjIzDqnH_html3-3.png
-[debug] 21:26:35.132 Processed: image/BMw2wcZ1QkqNDM6wADvw_html1-2.png
-[debug] 21:26:35.133 Processed: image/dselK3aQTamtrlRgXEt4_5878ae80.png
-[debug] 21:26:35.134 Processed: image/Dt8qrPkeSymD78W0DmB9_html2-3.png
-[debug] 21:26:35.135 Processed: image/GyeO6tYCTP6KqSzrKSCi_html4-1.png
-[debug] 21:26:35.136 Processed: image/hxoYB90RyVoypWLiGwRQ_html4-3.png
-[debug] 21:26:35.137 Processed: image/J0dGtij5QHW5rM71b1K4_69919212.png
-[debug] 21:26:35.137 Processed: image/KiIKvWqDQLSzRSWF14BJ_html3-2.png
-[debug] 21:26:35.139 Processed: image/kQiNSVBnTKm0EWe0YSSr_html4-4.png
-[debug] 21:26:35.141 Processed: image/laHLnesBSPOkJMnJa0Dp_html2-1.png
-[debug] 21:26:35.144 Processed: image/NXRkjm7lSPingeD2QxDC_html1-1.png
-[debug] 21:26:35.146 Processed: image/psbqZtnRo2hcuxTnrs7t_414659d1.png
-[debug] 21:26:35.148 Processed: image/qbCoGyZRRAilaapAWtL0_b095db1b.png
-[debug] 21:26:35.150 Processed: image/qRo1YIK2TUajq4ycFdBc_excel3.png
-[debug] 21:26:35.152 Processed: image/qvZxc31IRNudZBNFdMna_CSSAnimationExample.gif
-[debug] 21:26:35.153 Processed: image/REVdse98QKmT7WBtIids_html2-2.png
-[debug] 21:26:35.160 Processed: image/Rh8XEqqCS72Oyupr1yX7_excel2.png
-[debug] 21:26:35.162 Processed: image/RqgCMSFPQMB9R9Xnp26r_0de062e5.png
-[debug] 21:26:35.164 Processed: image/shNDc1b2SKCrx6rY6ut4_excel1.png
-[debug] 21:26:35.166 Processed: image/sXDKnkT1Rb2wsTK2LtQx_08cf5fc3.png
-[debug] 21:26:35.170 Processed: image/Thumbs.db
-[debug] 21:26:35.173 Processed: image/Vltu2TCcTOukQaWqVjvO_ecf3bb10.png
-[debug] 21:26:35.175 Processed: image/wpLKVi59SlecwcHkgmR2_html4-2.png
-[debug] 21:26:35.176 Processed: image/xXR4CuvHSUS9OvcCW4GD_html1-3.png
-[debug] 21:26:35.178 Processed: image/zHKS5sZoRK2oecYqNALa_html3-1.png
-[debug] 21:26:35.180 Processed: image/zQNudNIQA6xcbOdsmBAl_73b0dcdf.png
-[debug] 21:26:35.202 Theme source loaded
-[debug] 21:26:35.203 Start watching theme source...
-[debug] 21:26:35.242 Theme i18n loaded
-[debug] 21:26:35.365 Processed: _posts/2006-04-17--making-progress-g-trent-lott-tl-v10-neptune-captives-released.md
-[debug] 21:26:35.384 Processed: _posts/2006-04-17--making-progress-patience-and-perseverance-g-garonne-tl20-desert-labyrinth-baked.md
-[debug] 21:26:35.395 Processed: _posts/2006-04-18--making-progress-g-trent-lott-forest-goddess-tl-v30-baked.md
-[debug] 21:26:35.407 Processed: _posts/2006-04-22--making-progress-g-trent-lotts-latest-capital-of-tl-v40-air.md
-[debug] 21:26:35.420 Processed: _posts/2006-05-01--making-progress-carved-spiral-xia-menfu-new-production-scheduled.md
-[debug] 21:26:35.432 Processed: _posts/2006-05-01--making-progress-spiral-gate-challenge-small-painter.md
-[debug] 21:26:35.443 Processed: _posts/2006-05-07--making-progress-spiral-gate-experience-edition-released.md
-[debug] 21:26:35.455 Processed: _posts/2006-05-14--making-progress-g-trent-lott-tl-time-level-mothers-day-special-prisoner-recorded-flight-baked.md
-[debug] 21:26:35.468 Processed: _posts/2006-05-19--making-progress-g-trent-lott-fusion-version-11-version-of-tl-war-of-god-and-man-came-out.md
-[debug] 21:26:35.483 Processed: _posts/2006-05-25--making-progress-spiral-summer-chapter-of-making-progress.md
-[debug] 21:26:35.496 Processed: _posts/2006-06-07--anime-experience-six-sevenths-the-bonds-of-reasoning-tell-us-about-juvenile-detective.md
-[debug] 21:26:35.512 Processed: _posts/2013-09-03-javascriptcross-domain-ajax-using-a-php-web-page-information-to-the-jsonp.md
-[debug] 21:26:35.534 Processed: _posts/2013-09-03-javascriptcross-domain-ajax-using-yql.md
-[debug] 21:26:35.548 Processed: _posts/2013-09-04-css-create-animation-effects-use-the-keyframe-animation.md
-[debug] 21:26:35.561 Processed: _posts/2013-09-06-html-basic-grammatical-structures.md
-[debug] 21:26:35.576 Processed: _posts/2013-09-07-html-text-structure.md
-[debug] 21:26:35.591 Processed: _posts/2013-09-08-html-set-the-page-encoding.md
-[debug] 21:26:35.609 Processed: _posts/2013-09-09-excel-the-excel-trial-and-error-file-transfer-pictures.md
-[debug] 21:26:35.631 Processed: _posts/2013-09-10-html-picture-with-hyperlink.md
-[debug] 21:26:35.645 Processed: _posts/2013-09-05-cvar-dynamic.md
-[debug] 21:26:35.656 Processed: _posts/2006-04-30--making-progress-gram-garonne-tl-time-level-v50-finale-king-emperor-and-death-of-the-day-announced.md
-[debug] 21:26:35.667 Processed: _posts/2006-06-24--making-progress-sailing-in-mind-former-name-nautical-stories-complex.md
-[debug] 21:26:35.678 Processed: _posts/2006-07-03--life-interesting-yangmingshan-national-park-one-day-tour.md
-[debug] 21:26:35.691 Processed: _posts/2006-07-01--life-interesting-keelung-harbor-swim.md
-[debug] 21:26:35.705 Processed: _posts/2006-07-14--life-interesting-forests-freshwater-homecoming-day.md
-[debug] 21:26:35.728 Processed: _posts/2006-07-16--novels-a-spoof-wing-world-1.md
-[debug] 21:26:41.632 Cache saved
-[info] 21:26:41.828 Hexo is running at localhost:4000/. Press Ctrl+C to stop.
-[debug] 21:26:41.925 Render index: 
-[debug] 21:26:49.494 Render tag: tags/小說創作/
-[debug] 21:27:10.926 Render index: 
-[create] 21:29:10.872 Source: _posts\2006-07-16--novels-a-spoof-wing-world-2.md
-[error] 21:29:10.997 TypeError: Cannot set property '_content' of null
-TypeError: Cannot set property '_content' of null
-    at module.exports (c:\Users\灆洢\AppData\Roaming\npm\node_modules\hexo\lib\util\yfm.js:24:21)
-    at c:\Users\灆洢\AppData\Roaming\npm\node_modules\hexo\lib\plugins\processor\post.js:85:14
-    at c:\Users\灆洢\AppData\Roaming\npm\node_modules\hexo\node_modules\async\lib\async.js:422:17
-    at c:\Users\灆洢\AppData\Roaming\npm\node_modules\hexo\node_modules\async\lib\async.js:416:17
-    at Array.forEach (native)
-    at _each (c:\Users\灆洢\AppData\Roaming\npm\node_modules\hexo\node_modules\async\lib\async.js:32:24)
-    at Object.taskComplete (c:\Users\灆洢\AppData\Roaming\npm\node_modules\hexo\node_modules\async\lib\async.js:415:13)
-    at processImmediate [as _immediateCallback] (timers.js:330:15)
+[debug] 10:04:16.732 Configuration file load successfully
+[debug] 10:04:16.740 Version info checked successfully
+[debug] 10:04:16.753 Plugin loaded successfully: hexo-generator-feed
+[debug] 10:04:16.764 Plugin loaded successfully: hexo-generator-sitemap
+[debug] 10:04:16.765 Loading the database...
+[info] 10:04:17.985 Start deploying: git
+[error] 10:04:17.999 TypeError: Property 'git' of object #<Object> is not a function
+TypeError: Property 'git' of object #<Object> is not a function
+    at c:\Users\灆洢\AppData\Roaming\npm\node_modules\hexo\lib\plugins\console\deploy.js:48:21
+    at iterate (c:\Users\灆洢\AppData\Roaming\npm\node_modules\hexo\node_modules\async\lib\async.js:131:13)
+    at Object.async.eachSeries (c:\Users\灆洢\AppData\Roaming\npm\node_modules\hexo\node_modules\async\lib\async.js:147:9)
+    at c:\Users\灆洢\AppData\Roaming\npm\node_modules\hexo\lib\plugins\console\deploy.js:43:11
+    at c:\Users\灆洢\AppData\Roaming\npm\node_modules\hexo\lib\plugins\console\deploy.js:33:27
+    at Object.cb [as oncomplete] (fs.js:168:19)

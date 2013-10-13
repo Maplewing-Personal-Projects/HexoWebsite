@@ -68,7 +68,7 @@ per_page: 10
 pagination_dir: page
 
 # Disqus
-disqus_shortname: knightzoneblog
+disqus_shortname: knightzoneorgblog
 
 # Extensions
 ## Plugins: https://github.com/tommy351/hexo/wiki/Plugins
@@ -80,7 +80,7 @@ exclude_generator:
 ## Docs: http://zespia.tw/hexo/docs/deploy.html
 deploy:
   type: github
-  repository: git@github.com:sinmaplewing/sinmaplewing.github.io.git
+  repository: git@github.com:sinmaplewing/hexoBlog.git
   branch: master
 
 plugins:
