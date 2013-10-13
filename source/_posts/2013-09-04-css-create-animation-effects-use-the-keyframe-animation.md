@@ -11,9 +11,9 @@ tags: [CSS]
 首先先在CSS檔內建立@keyframes去制定動畫的內容，其Syntax在下方：
 ```css keyframes.css
 @keyframes 動畫名稱 {
-	關鍵影格選擇器1 { 眾多css樣式; }
-	關鍵影格選擇器2 { 眾多css樣式; }
-	...
+  關鍵影格選擇器1 { 眾多css樣式; }
+  關鍵影格選擇器2 { 眾多css樣式; }
+  ...
 }
 ```
 概念類似Flash當中的關鍵影格，在動畫內建立各個位置的時候，其css樣式為何，到最後就交由瀏覽器去做補間效果。
@@ -25,16 +25,16 @@ tags: [CSS]
 ```css percent-selector.css
 @keyframes myAnimation
 {
-	0% { margin-top: 0px; background-color: yellow;}
-	50% { margin-top: 50px; background-color: red; }
-	100% { margin-top: 100px; background-color: blue; }
+  0% { margin-top: 0px; background-color: yellow;}
+  50% { margin-top: 50px; background-color: red; }
+  100% { margin-top: 100px; background-color: blue; }
 }
 ```
 ```css from-to-selector.css
 @keyframes myAnimationFromTo
 {
-	from { margin-top: 20px; color: yellow; }
-	to { margin-top: 80px; color: blue; }
+  from { margin-top: 20px; color: yellow; }
+  to { margin-top: 80px; color: blue; }
 }
 ```
 建立好@keyframes動畫內容後，接著就要在欲放置該動畫的CSS樣式表內加入animation屬性。
@@ -42,7 +42,7 @@ tags: [CSS]
 ## Animation屬性
 Animation屬性的Syntax於下：
 ```css animation.css
-	animation: name duration timing-function delay iteration-count direction;
+  animation: name duration timing-function delay iteration-count direction;
 ```
 或者依照上面每一項的名稱皆可分開寫：
 ```css animation-split.css
@@ -66,9 +66,9 @@ timing-function有linear、ease、ease-in、ease-out、ease-in-out可以用，�
 底下用個範例去使用上面定義的myAnimation動畫：
 ```css div-animation.css
 div{
-	width: 100px;
-	height: 100px;
-	animation: myAnimation 3s ease 0s infinite alternate;
+  width: 100px;
+  height: 100px;
+  animation: myAnimation 3s ease 0s infinite alternate;
 }
 ```
 ![CSSAnimationExample.gif](/image/qvZxc31IRNudZBNFdMna_CSSAnimationExample.gif)
@@ -82,23 +82,23 @@ div{
 ```css webkit.css
 @keyframes myAnimation
 {
-	0% { margin-top: 0px; background-color: yellow;}
-	50% { margin-top: 50px; background-color: red; }
-	100% { margin-top: 100px; background-color: blue; }
+  0% { margin-top: 0px; background-color: yellow;}
+  50% { margin-top: 50px; background-color: red; }
+  100% { margin-top: 100px; background-color: blue; }
 }
 
 @-webkit-keyframes myAnimation
 {
-	0% { margin-top: 0px; background-color: yellow;}
-	50% { margin-top: 50px; background-color: red; }
-	100% { margin-top: 100px; background-color: blue; }
+  0% { margin-top: 0px; background-color: yellow;}
+  50% { margin-top: 50px; background-color: red; }
+  100% { margin-top: 100px; background-color: blue; }
 }
 
 div{
-	width: 100px;
-	height: 100px;
-	animation: myAnimation 3s ease 0s infinite alternate;
-	-webkit-animation: myAnimation 3s ease 0s infinite alternate;
+  width: 100px;
+  height: 100px;
+  animation: myAnimation 3s ease 0s infinite alternate;
+  -webkit-animation: myAnimation 3s ease 0s infinite alternate;
 }
 ```
 

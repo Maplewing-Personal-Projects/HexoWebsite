@@ -15,7 +15,7 @@ tags: [Javascript, Ajax]
 使用前先將該頁PHP內的 $enable_jsop = false; 從false改為true，然後上傳到PHP伺服器，接著使用AJAX抓取資料的js部分寫上：
 ``` js xdomainajax.js
 $.getJSON( /* ba-simple-proxy.php所在地 + "?callback=?&url=" + 欲抓資料之網頁所在的網址 */ , function(data){
-	/* data.contents即是該網頁內容 */
+  /* data.contents即是該網頁內容 */
 });
 ```
 這樣就可以進行Cross Domain AJAX了！

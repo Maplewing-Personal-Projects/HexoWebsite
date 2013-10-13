@@ -9,24 +9,24 @@ tags: [HTML]
 ```html pictureHyperlinkExample.html
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8" />
-		<title>圖片與超連結範例</title>
-	</head>
-	<body>
-		<h1 id="top">圖片與超連結</h1> <!-- 設定h1的id為top -->
-		<img src="http://www.knightzone.org/image/thumbs/32.jpg" alt="全身圖" /> <!-- 放置圖片 -->
-		<a href="http://www.google.com" target="_blank">往Google</a> <!-- 連結並換新分頁 -->
-		<p>好幾個段落</p>
-		<p>好幾個段落</p>
-		<p>好幾個段落</p>
-		<p>好幾個段落</p>
-		<p>好幾個段落</p>
-		<p>好幾個段落</p>
-		<p>好幾個段落</p>
-		<p>好幾個段落</p>
-		<a href="#top">回Top</a> <!-- 連結至id為top的地方 -->
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>圖片與超連結範例</title>
+  </head>
+  <body>
+    <h1 id="top">圖片與超連結</h1> <!-- 設定h1的id為top -->
+    <img src="http://www.knightzone.org/image/thumbs/32.jpg" alt="全身圖" /> <!-- 放置圖片 -->
+    <a href="http://www.google.com" target="_blank">往Google</a> <!-- 連結並換新分頁 -->
+    <p>好幾個段落</p>
+    <p>好幾個段落</p>
+    <p>好幾個段落</p>
+    <p>好幾個段落</p>
+    <p>好幾個段落</p>
+    <p>好幾個段落</p>
+    <p>好幾個段落</p>
+    <p>好幾個段落</p>
+    <a href="#top">回Top</a> <!-- 連結至id為top的地方 -->
+  </body>
 </html>
 ```
 ![html4-1.png](/image/GyeO6tYCTP6KqSzrKSCi_html4-1.png)

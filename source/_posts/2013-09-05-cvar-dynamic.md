@@ -27,7 +27,7 @@ Dictionary<string, int> dict = new Dictionary<string, int>();
 /* 增加dict的資料 */
 
 foreach( var pair in dict ){  //原本應該寫foreach(KeyValuePair<string, int> pair in dict)
-	/* 對pair做事情 */
+  /* 對pair做事情 */
 }
 ```
 
@@ -48,7 +48,7 @@ dyn.HelloEveryBody(); //當dyn內存的值具有HelloEveryBody方法可調用的
 而這個地方也說明了你可以用C#來做duck-typing的事情，底下用個簡單的範例作為收尾。
 ```cs quack.cs
 void Quack(dynamic duck){
-	duck.quack(); //只要傳進來的值具有quack方法可調用，則就會正確執行，不管其型別為何。
+  duck.quack(); //只要傳進來的值具有quack方法可調用，則就會正確執行，不管其型別為何。
 }
 ```
 

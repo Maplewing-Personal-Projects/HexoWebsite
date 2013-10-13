@@ -20,34 +20,34 @@ tags: [HTML]
 ```html BasicTableExample.html
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>表格</title>
-	</head>
-	<body>
-		<table border="1">
-			<tr>
-				<th>英文名稱</th>
-				<th>中文名稱</th>
-			</tr>
-			<tr>
-				<td>Sonic</td>
-				<td>索尼克</td>
-			</tr>
-			<tr>
-				<td>Tails</td>
-				<td>塔爾斯</td>
-			</tr>
-			<tr>
-				<td>Knuckles</td>
-				<td>納克</td>
-			</tr>
-			<tr>
-				<td>Amy</td>
-				<td>艾咪</td>
-			</tr>
-		</table>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>表格</title>
+  </head>
+  <body>
+    <table border="1">
+      <tr>
+        <th>英文名稱</th>
+        <th>中文名稱</th>
+      </tr>
+      <tr>
+        <td>Sonic</td>
+        <td>索尼克</td>
+      </tr>
+      <tr>
+        <td>Tails</td>
+        <td>塔爾斯</td>
+      </tr>
+      <tr>
+        <td>Knuckles</td>
+        <td>納克</td>
+      </tr>
+      <tr>
+        <td>Amy</td>
+        <td>艾咪</td>
+      </tr>
+    </table>
+  </body>
 </html>
 ```
 ![table01.png](http://user-image.logdown.io/user/412/blog/412/post/146487/sN65znISLmbf66BEF316_table01.png)
@@ -63,40 +63,40 @@ tags: [HTML]
 ```html BasicTableExample.html
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>表格</title>
-	</head>
-	<body>
-		<table border="1">
-			<tr>
-				<th>英文名稱</th>
-				<th>中文名稱</th>
-			</tr>
-			<tr>
-				<td rowspan="2">Sonic</td>
-				<td>索尼克</td>
-			</tr>
-			<tr>
-				<td>音速小子</td>
-			</tr>
-			<tr>
-				<td>Tails</td>
-				<td>塔爾斯</td>
-			</tr>
-			<tr>
-				<td>Knuckles</td>
-				<td>納克</td>
-			</tr>
-			<tr>
-				<td>Amy</td>
-				<td>艾咪</td>
-			</tr>
-			<tr>
-				<td colspan="2">E-123 Omega</td>
-			</tr>
-		</table>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>表格</title>
+  </head>
+  <body>
+    <table border="1">
+      <tr>
+        <th>英文名稱</th>
+        <th>中文名稱</th>
+      </tr>
+      <tr>
+        <td rowspan="2">Sonic</td>
+        <td>索尼克</td>
+      </tr>
+      <tr>
+        <td>音速小子</td>
+      </tr>
+      <tr>
+        <td>Tails</td>
+        <td>塔爾斯</td>
+      </tr>
+      <tr>
+        <td>Knuckles</td>
+        <td>納克</td>
+      </tr>
+      <tr>
+        <td>Amy</td>
+        <td>艾咪</td>
+      </tr>
+      <tr>
+        <td colspan="2">E-123 Omega</td>
+      </tr>
+    </table>
+  </body>
 </html>
 ```
 ![table02.png](http://user-image.logdown.io/user/412/blog/412/post/146487/qpjHGljxQUG6VIBU03Hw_table02.png)

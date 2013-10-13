@@ -14,15 +14,15 @@ tags: [Javascript]
 ```
 ```js 範例
 var obj = {
-	x: 20,
-	f: function(){ console.log(this.x); }
+  x: 20,
+  f: function(){ console.log(this.x); }
 };
 
 obj.f(); //由於調用f函式時，點前面物件為obj，故f內的this指向obj，則輸出為20。
 
 obj.innerobj = {
-	x: 30,
-	f: function(){ console.log(this.x); }
+  x: 30,
+  f: function(){ console.log(this.x); }
 }
 
 obj.innerobj.f(); //由於調用f函式時，點前面物件為obj.innerobj，故f內的this指向obj.innerobj，則輸出為30。
@@ -37,7 +37,7 @@ obj.innerobj.f(); //由於調用f函式時，點前面物件為obj.innerobj，�
 ```js 範例
 var x = 10;
 var f = function(){
-	console.log(this.x);
+  console.log(this.x);
 };
 
 f(); //由於調用f函式時，前方並未有[物件.]的形式，故f內的this指向全域物件，則輸出全域變數的x(10)。
@@ -50,12 +50,12 @@ f(); //由於調用f函式時，前方並未有[物件.]的形式，故f內的th
 ```js example1.js
 var x = 10;
 var obj = {
-	x: 20,
-	f: function(){
-		console.log(this.x);
-		var foo = function(){ console.log(this.x); }
-		foo(); // (2)
-	}
+  x: 20,
+  f: function(){
+    console.log(this.x);
+    var foo = function(){ console.log(this.x); }
+    foo(); // (2)
+  }
 };
 
 obj.f();  // (1)
@@ -66,13 +66,13 @@ obj.f();  // (1)
 ```js example1.js
 var x = 10;
 var obj = {
-	x: 20,
-	f: function(){
-		console.log(this.x);
-		var that = this; //使用that保留在這個函式內的this
-		var foo = function(){ console.log(that.x); } //使用that取得obj
-		foo();
-	}
+  x: 20,
+  f: function(){
+    console.log(this.x);
+    var that = this; //使用that保留在這個函式內的this
+    var foo = function(){ console.log(that.x); } //使用that取得obj
+    foo();
+  }
 };
 
 obj.f();
@@ -82,8 +82,8 @@ obj.f();
 ```js example2.js
 var x = 10;
 var obj = {
-	x: 20,
-	f: function(){ console.log(this.x); }
+  x: 20,
+  f: function(){ console.log(this.x); }
 };
 
 obj.f(); // (1)
@@ -92,8 +92,8 @@ var fOut = obj.f;
 fOut(); // (2)
 
 var obj2 = {
-	x: 30,
-	f: obj.f
+  x: 30,
+  f: obj.f
 }
 
 obj2.f(); // (3)
@@ -108,12 +108,12 @@ obj2.f(); // (3)
 ```
 ```js 範例
 var obj = {
-	x: 20;
-	f: function(){ console.log(this.x); }
+  x: 20;
+  f: function(){ console.log(this.x); }
 };
 
 var obj2 = {
-	x: 30;
+  x: 30;
 };
 
 obj1.f.call(obj2); //利用call指派f的this為指向obj2，故輸出為30
@@ -126,14 +126,14 @@ new 建構式(); //建構式內之this指向new所產生之新物件
 ```
 ```js 範例
 function Monster(){
-	this.hp = 100;
+  this.hp = 100;
 };
 
 var monster = new Monster(); //Monster的this指向new出來之新物件並回傳回來，new的寫法就類似於下面的寫法。
 var monster = (function(){
-	var _new = { constructor: Monster, __proto__: Monster.prototype }; //在IE內可能不相似
-	_new.constructor(); //這也是為何說可以利用前三種情況來變化的原因，constructor呼叫時，this指向的即是_new這個物件。
-	return _new;
+  var _new = { constructor: Monster, __proto__: Monster.prototype }; //在IE內可能不相似
+  _new.constructor(); //這也是為何說可以利用前三種情況來變化的原因，constructor呼叫時，this指向的即是_new這個物件。
+  return _new;
 })();
 ```
 
@@ -141,24 +141,24 @@ var monster = (function(){
 先想想在jQuery中，我們若要讓#button這個元素被click的時候，內容改為"Clicked"這樣的字串，該如何寫呢？
 ```js clicked.js
 $('#button').click(function(){
-	this.html("Clicked");
+  this.html("Clicked");
 })
 ```
 此時這個this居然會指向$('#button')這個物件，感覺很自然，但實際想想會覺得很神奇。假設你寫一個function，它可以吃一個function，並在裡面呼叫傳入的function，你該怎麼寫呢？
 ```js function-to-function.js
 var f = function(innerf){
-	//前面的處理
-	innerf(arg1, arg2, arg3, ......);
-	//後面的處理
+  //前面的處理
+  innerf(arg1, arg2, arg3, ......);
+  //後面的處理
 }
 ```
 但如果這樣寫的話，innerf裡的this根據前述規則就應該是全域物件了！那為什麼常常別人實作的callback函式可讓this指向於調用放入該callback的函式之this所指向之物件呢？這表示大家實作上會遵守一個規則，會將自己的this傳給callback當作它的this來用！這也是為什麼我說這個情況其實也是前三種情況的變化而已了！所以上面的code應該改成如下的形式會比較好：
 ```js function-to-function-improved.js
 var f = function(innerf){
-	//前面的處理
-	innerf.call(this, arg1, arg2, arg3, ......);
-	//或是innerf.apply(this, [arg1, arg2, arg3, ......])
-	//後面的處理
+  //前面的處理
+  innerf.call(this, arg1, arg2, arg3, ......);
+  //或是innerf.apply(this, [arg1, arg2, arg3, ......])
+  //後面的處理
 }
 ```
 

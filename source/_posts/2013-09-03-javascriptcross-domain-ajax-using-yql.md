@@ -16,7 +16,7 @@ tags: [Javascript, Ajax]
 引用以上的plugin後，在要做讀取資料的地方寫入底下的Code：
 ``` js xdomainajax.js
 $.get(/* 此處放置欲抓取之資料所在的URL */, function(data){
-	/* data.responseText即為所在該URL的網頁內容 */
+  /* data.responseText即為所在該URL的網頁內容 */
 });
 ```
 大體上我就是這樣成功的將資料抓進來了！！
