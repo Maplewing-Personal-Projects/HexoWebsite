@@ -55,9 +55,8 @@ tags: [HTML]
 ![ruby02.png](/imaga/6AhZ9VLCRHGdyaViPkKQ_ruby02.png)
 左邊Google Chrome可以使用標音功能，故就直接顯示其標音，rp標籤裡之內容不管；而右邊Firefox不能使用標音功能，故就把rp標籤內的內容也一併顯示出來。
 
-> 與w3schools.com裡的內容不同：rp標籤我是放在rt標籤外才能讓有標音功能的瀏覽器顯示正常，但w3schools.com內的卻放在rt標籤內。
-
-> Firefox支援Ruby否？根據w3schools.com的內容是說已經支援了，但我的Firefox還是沒有。如果你的Firefox沒有標音功能，可以到[這裡(HTML Ruby)](https://addons.mozilla.org/zh-tw/firefox/addon/html-ruby/)下載套件安裝一下就支援了！
+> 1. 與w3schools.com裡的內容不同：rp標籤我是放在rt標籤外才能讓有標音功能的瀏覽器顯示正常，但w3schools.com內的卻放在rt標籤內。
+> 2. Firefox支援Ruby否？根據w3schools.com的內容是說已經支援了，但我的Firefox還是沒有。如果你的Firefox沒有標音功能，可以到[這裡(HTML Ruby)](https://addons.mozilla.org/zh-tw/firefox/addon/html-ruby/)下載套件安裝一下就支援了！
 
 ## 參考資料
 1. w3schools.com &gt; HTML &lt;ruby&gt; Tag：[http://www.w3schools.com/tags/tag_ruby.asp](http://www.w3schools.com/tags/tag_ruby.asp)
