@@ -52,7 +52,7 @@ tags: [HTML]
   </body>
 </html>
 ```
-![ruby02.png](/imaga/6AhZ9VLCRHGdyaViPkKQ_ruby02.png)
+![ruby02.png](/image/6AhZ9VLCRHGdyaViPkKQ_ruby02.png)
 左邊Google Chrome可以使用標音功能，故就直接顯示其標音，rp標籤裡之內容不管；而右邊Firefox不能使用標音功能，故就把rp標籤內的內容也一併顯示出來。
 
 > 1. 與w3schools.com裡的內容不同：rp標籤我是放在rt標籤外才能讓有標音功能的瀏覽器顯示正常，但w3schools.com內的卻放在rt標籤內。
