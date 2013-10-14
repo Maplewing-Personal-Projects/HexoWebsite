@@ -14,21 +14,21 @@ tags: [HTML]
 ```html ruby01.html
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>標音</title>
-	</head>
-	<body>
-		<ruby>踏<rt>ふ</rt></ruby>まれた<ruby>花<rt>はな</rt></ruby> <br />
-		被<ruby>踐<rt>ㄐㄧㄢˋ</rt>踏<rt>ㄊㄚˋ</rt></ruby>的花朵
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>標音</title>
+  </head>
+  <body>
+    <ruby>踏<rt>ふ</rt></ruby>まれた<ruby>花<rt>はな</rt></ruby> <br />
+    被<ruby>踐<rt>ㄐㄧㄢˋ</rt>踏<rt>ㄊㄚˋ</rt></ruby>的花朵
+  </body>
 </html>
 ```
 ![ruby01.png](/image/v34wkTDHS9mM83j3oOgw_ruby01.png)
 上面的排版有點亂，不過為了不要讓文字中間出現空白，只好擠成一行了，底下列一下通用式用法的解說：
 ```html rubyusage.html
 <ruby>
-	[欲加上標音的字詞1] <rt>[標音1]</rt>
+  [欲加上標音的字詞1] <rt>[標音1]</rt>
   [欲加上標音的字詞2] <rt>[標音2]</rt>
   ...
 </ruby>
@@ -42,14 +42,14 @@ tags: [HTML]
 ```html ruby02.html
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>標音</title>
-	</head>
-	<body>
-		<ruby>踏<rp>（</rp><rt>ふ</rt><rp>）</rp></ruby>まれた<ruby>花<rp>（</rp><rt>はな</rt><rp>）</rp></ruby> <br />
-		被<ruby>踐<rp>（</rp><rt>ㄐㄧㄢˋ</rt><rp>）</rp>踏<rp>（</rp><rt>ㄊㄚˋ</rt><rp>）</rp></ruby>的花朵
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>標音</title>
+  </head>
+  <body>
+    <ruby>踏<rp>（</rp><rt>ふ</rt><rp>）</rp></ruby>まれた<ruby>花<rp>（</rp><rt>はな</rt><rp>）</rp></ruby> <br />
+    被<ruby>踐<rp>（</rp><rt>ㄐㄧㄢˋ</rt><rp>）</rp>踏<rp>（</rp><rt>ㄊㄚˋ</rt><rp>）</rp></ruby>的花朵
+  </body>
 </html>
 ```
 ![ruby02.png](/imaga/6AhZ9VLCRHGdyaViPkKQ_ruby02.png)
