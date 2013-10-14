@@ -1,4 +1,5 @@
 .DS_Store
+.deploy
 node_modules
 db.json
 public
