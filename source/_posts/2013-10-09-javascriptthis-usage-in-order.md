@@ -7,7 +7,7 @@ tags: [Javascript]
 ---
 常用Javascript的人都知道，［this這個關鍵字在一個函式內究竟指向誰］的這個問題很令人頭大，本人在這裡整理了一下Javascript中this的指向的五種不同情況，其中前三種屬於基本的情況，而後兩種情況可基於前三種情況的方式來進行思考。
 
-## 1.this指向於調用該函式之物件
+# 1.this指向於調用該函式之物件
 如果你有學過C/C++，你可能會記得一個物件內的成員函式裡的this指的即是該成員函式所在之物件，但在Javascript裡則有那麼些許不同，Javascript裡的this看的是究竟是誰調用該函式，而不是看該函式被定義在哪個物件內，這個大原則抓到了，基本上就已經可以探知this的奧秘了。底下寫一下這種情況的公式與範例：
 ```js 公式
 物件.函式(); //函式內的this指向該物件
@@ -29,7 +29,7 @@ obj.innerobj.f(); //由於調用f函式時，點前面物件為obj.innerobj，�
 
 ```
 
-## 2.this指向全域物件(瀏覽器：window物件、node.js：GLOBAL物件)
+# 2.this指向全域物件(瀏覽器：window物件、node.js：GLOBAL物件)
 如果調用函式的前方並未有物件，則函式內this就指向全域物件。在瀏覽器內全域物件為window物件，而在node.js中全域物件則為GLOBAL物件。底下一樣寫一下這種情況的公式與範例：
 ```js 公式
 函式(); //函式內的this指向全域物件
@@ -45,8 +45,8 @@ f(); //由於調用f函式時，前方並未有[物件.]的形式，故f內的th
 
 > 例外：在使用node.js時，若使用`node file.js`這樣的方式執行js檔，並不會讓宣告的全域變數掛在全域物件上(意指會利用function將code整個包起來執行)，故輸出應為undefined。
 
-### 前兩種情況常見誤導範例
-#### 範例一、物件之成員函式內有函式(感謝[NSLin](http://0w0.logdown.com/posts/41667-about-me)在實務讀書會上的範例Code)
+## 前兩種情況常見誤導範例
+### 範例一、物件之成員函式內有函式(感謝[NSLin](http://0w0.logdown.com/posts/41667-about-me)在實務讀書會上的範例Code)
 ```js example1.js
 var x = 10;
 var obj = {
@@ -78,7 +78,7 @@ var obj = {
 obj.f();
 ```
 
-#### 範例二、借用函式
+### 範例二、借用函式
 ```js example2.js
 var x = 10;
 var obj = {
@@ -100,7 +100,7 @@ obj2.f(); // (3)
 ```
 範例中三次調用之函式的this所指向的物件為何，不知道各位能不能看得出來。雖然用的是同一個函式，但是因為調用的不同，故this所指向的物件就不同。(1)obj.f()的f所指向的是obj，這比較沒有問題，輸出的會是20；而(2)fOut()裡的this，則是因為調用時前方無物件，則this所指的是全域物件，輸出的會是10；最後(3)obj2.f()則是obj2去呼叫f，故f內的this指向的是obj2，輸出的會是30。
 
-## 3.this指向利用call或apply所指派給this的物件
+# 3.this指向利用call或apply所指派給this的物件
 有個方法可以更動前兩種敘述所讓this指派的值，就是利用call與apply。call與apply都是呼叫該函式並讓該函式的this指向給予call或apply的第一個參數。至於call和apply的差別則是在於其後面給予被調用之函式的參數放入的方法不同，一個是直接攤平放在第二個以後的參數；一個是直接放入一個裡面放要給予之參數的陣列。底下一樣看一下公式和範例：
 ```js 公式
 (A物件.)函式.call(B物件,參數1,參數2,參數3, ......); //函式的this指向B物件(若B物件為null，則指向全域物件)
@@ -119,7 +119,7 @@ var obj2 = {
 obj1.f.call(obj2); //利用call指派f的this為指向obj2，故輸出為30
 ```
 
-## 4.this指向new所產生之新物件
+# 4.this指向new所產生之新物件
 若將函式當作建構式(constructor)來用，則內部的this則指向於new所產生之新物件。
 ```js 公式
 new 建構式(); //建構式內之this指向new所產生之新物件
@@ -137,7 +137,7 @@ var monster = (function(){
 })();
 ```
 
-## 5.callback函式內的this會指向於調用放入該callback的函式之this所指向之物件
+# 5.callback函式內的this會指向於調用放入該callback的函式之this所指向之物件
 先想想在jQuery中，我們若要讓#button這個元素被click的時候，內容改為"Clicked"這樣的字串，該如何寫呢？
 ```js clicked.js
 $('#button').click(function(){
@@ -162,7 +162,7 @@ var f = function(innerf){
 }
 ```
 
-## 參考資料
+# 參考資料
 1. Javascript的this用法：[http://www.ruanyifeng.com/blog/2010/04/using_this_keyword_in_javascript.html](http://www.ruanyifeng.com/blog/2010/04/using_this_keyword_in_javascript.html)
 2. [图解] 你不知道的 JavaScript - “this”：[http://www.cnblogs.com/ruxpinsp1/archive/2008/04/20/1162463.html](http://www.cnblogs.com/ruxpinsp1/archive/2008/04/20/1162463.html)
 

@@ -7,7 +7,7 @@ tags: [CSS]
 ---
 之前在網站上搞了一個Logo用的CSS3動畫，然後現在這個部落格的標題也用了CSS3動畫，故現在想來好好地整理一下跟CSS3動畫相關的功能，底下就開始說明該如何建立CSS3動畫。
 
-## 使用@keyframes建立動畫內容
+# 使用@keyframes建立動畫內容
 首先先在CSS檔內建立@keyframes去制定動畫的內容，其Syntax在下方：
 ```css keyframes.css
 @keyframes 動畫名稱 {
@@ -39,7 +39,7 @@ tags: [CSS]
 ```
 建立好@keyframes動畫內容後，接著就要在欲放置該動畫的CSS樣式表內加入animation屬性。
 
-## Animation屬性
+# Animation屬性
 Animation屬性的Syntax於下：
 ```css animation.css
   animation: name duration timing-function delay iteration-count direction;
@@ -77,7 +77,7 @@ div{
 
 如果不想自己coding出動畫，想藉助一些工具來做動畫，可以參考使用[CSS 3.0 Maker](http://css3maker.com/)唷！
 
-## -webkit-前綴字
+# -webkit-前綴字
 由於目前通用性的寫法在Chrome上還是不能用，請在CSS多複製一份@keyframes動畫與animation屬性，並在前面加上-webkit-前綴字，如下列範例所示：
 ```css webkit.css
 @keyframes myAnimation
@@ -102,7 +102,7 @@ div{
 }
 ```
 
-## 參考資料
+# 參考資料
 1. w3schools.com > CSS3 @keyframes Rule：[http://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp](http://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp)
 2. w3schools.com > CSS3 animation Property：[http://www.w3schools.com/cssref/css3_pr_animation.asp](http://www.w3schools.com/cssref/css3_pr_animation.asp)
 3. 池水間 - 你需要知道的CSS3動畫技術 ::: 睡蓮‧池水間 - waterlily-lsl.com：[http://waterlily-lsl.com/modules/article/view.article.php/c2/232/p2](http://waterlily-lsl.com/modules/article/view.article.php/c2/232/p2)

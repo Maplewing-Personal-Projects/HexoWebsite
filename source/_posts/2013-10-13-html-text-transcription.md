@@ -9,7 +9,7 @@ tags: [HTML]
 
 大家在打入中文、日文的時候，有時候應該會想加入標音吧！正好以前IE有個標籤叫做ruby標籤可以做到這樣的事情，而在HTML5終於把ruby標籤做為標準加入了！
 
-## 標音
+# 標音
 底下一樣先用一個範例來解釋：
 ```html ruby01.html
 <!DOCTYPE html>
@@ -37,7 +37,7 @@ tags: [HTML]
 
 > rb標籤：早期的寫法會把[欲加上標音的字詞]包在`<rb>...</rb>`內，但是收錄進HTML5標準的時候，去除了rb標籤，所以目前的標準是要省略rb標籤的唷！
 
-## 不支援標音之瀏覽器的表現方法
+# 不支援標音之瀏覽器的表現方法
 假設今天要讓不支援標音的瀏覽器上看起來也要至少正常一點，可以將要多餘顯示的文字用rp標籤包住。這樣的話，有支援標音的瀏覽器會忽略rp標籤裡的內容，而不支援標音的瀏覽器就會顯示rp標籤裡的內容。底下看個範例：
 ```html ruby02.html
 <!DOCTYPE html>
@@ -58,7 +58,7 @@ tags: [HTML]
 > 1. 與w3schools.com裡的內容不同：rp標籤我是放在rt標籤外才能讓有標音功能的瀏覽器顯示正常，但w3schools.com內的卻放在rt標籤內。
 > 2. Firefox支援Ruby否？根據w3schools.com的內容是說已經支援了，但我的Firefox還是沒有。如果你的Firefox沒有標音功能，可以到[這裡(HTML Ruby)](https://addons.mozilla.org/zh-tw/firefox/addon/html-ruby/)下載套件安裝一下就支援了！
 
-## 參考資料
+# 參考資料
 1. w3schools.com &gt; HTML &lt;ruby&gt; Tag：[http://www.w3schools.com/tags/tag_ruby.asp](http://www.w3schools.com/tags/tag_ruby.asp)
 2. w3schools.com &gt; HTML &lt;rp&gt; Tag：[http://www.w3schools.com/tags/tag_rp.asp](http://www.w3schools.com/tags/tag_rp.asp)
 3. Re: &lt;rb&gt; as part of HTML5 ruby? from Dean Lee on 2011-12-29 (public-html-ig-zh@w3.org from December 2011)：[http://lists.w3.org/Archives/Public/public-html-ig-zh/2011Dec/0021.html](http://lists.w3.org/Archives/Public/public-html-ig-zh/2011Dec/0021.html)

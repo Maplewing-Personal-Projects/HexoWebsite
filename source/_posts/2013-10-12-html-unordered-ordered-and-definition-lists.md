@@ -7,7 +7,7 @@ tags: [HTML]
 ---
 清單在網頁中是很常使用到的東西，故多少還是要了解一下。在HTML中有三種不太一樣的清單，分別是無序清單、有序清單與定義清單，無序清單與有序清單的用法差不多，但與定義清單的用法差距比較大，底下來個別解釋其使用的方法。
 
-## 無序清單
+# 無序清單
 ```html unordered-list.html
 <!DOCTYPE html>
 <html>
@@ -31,7 +31,7 @@ tags: [HTML]
 
 無序清單使用`<ul>...</ul>`將整個清單包起來，每一項使用`<li>...<li>`即可，效果就跟用Word按的項目符號及編號做出來的差不多。
 
-## 有序清單
+# 有序清單
 ```html ordered-list.html
 <!DOCTYPE html>
 <html>
@@ -59,7 +59,7 @@ tags: [HTML]
 
 HTML5提供了新的屬性，可讓ol反向計算數值，利用`reversed`屬性即可，僅要寫`<ol reversed>`即可反向。(HTML5的功能性屬性，大多都是有寫就有效果，不用給值，沒寫就沒有效果)
 
-## 定義清單
+# 定義清單
 ```html description-list.html
 <!DOCTYPE html>
 <html>
@@ -81,7 +81,7 @@ HTML5提供了新的屬性，可讓ol反向計算數值，利用`reversed`屬性
 
 與前述兩種清單不同的地方在於，整個清單用`<dl>...</dl>`包住，每一項從原本僅有一個li標籤，換成dt和dd各一個標籤，dt表示的是欲解釋的項目，dd表示的是欲解釋的內容，因為是解釋的內容，所以dd標籤在排版上會做自動縮排。
 
-## 巢狀清單用法
+# 巢狀清單用法
 若要在清單內的某一項再利用清單解釋，可用以下的做法：
 ```html nested-list.html
 <!DOCTYPE html>
@@ -116,7 +116,7 @@ HTML5提供了新的屬性，可讓ol反向計算數值，利用`reversed`屬性
 
 上面對於每一項li標籤內又在加入了另外一個清單去做描述，而清單內的清單瀏覽器會自動在排版上去做縮排，這是很方便可以做多層巢狀清單的用法，各位也可以自己試試看如果換成用ol和dl又會發生什麼事情。
 
-## 參考資料
+# 參考資料
 1. w3schools.com &gt; HTML &lt;ul&gt; Tag：[http://www.w3schools.com/tags/tag_ul.asp](http://www.w3schools.com/tags/tag_ul.asp)
 2. w3schools.com &gt; HTML &lt;ol&gt; Tag：[http://www.w3schools.com/tags/tag_ol.asp](http://www.w3schools.com/tags/tag_ol.asp)
 3. w3schools.com &gt; HTML &lt;dl&gt; Tag：[http://www.w3schools.com/tags/tag_dl.asp](http://www.w3schools.com/tags/tag_dl.asp)

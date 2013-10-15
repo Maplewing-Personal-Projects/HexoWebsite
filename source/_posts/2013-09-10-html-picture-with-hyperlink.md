@@ -31,7 +31,7 @@ tags: [HTML]
 ```
 ![html4-1.png](/image/GyeO6tYCTP6KqSzrKSCi_html4-1.png)
 
-## img標籤：放置圖片
+# img標籤：放置圖片
 如果要在網頁中放置圖片，可使用img標籤，它具有兩個屬性必須設定，一個為src屬性，是放你的圖片的路徑；另外一個則是alt屬性，是放你的圖片的說明文字，也有可能會被用於圖片連結不到時的替代文字。
 
 ```html img.html
@@ -44,7 +44,7 @@ tags: [HTML]
 <img src="圖片所在路徑" alt="說明文字" width="圖片寬度" height="圖片高度"/>
 ```
 
-## a標籤：放置超連結
+# a標籤：放置超連結
 若要放置超連結，可使用a標籤，它有href屬性可以設定該連結要往那兒去，當使用者點擊時瀏覽器會跳至該頁面。
 ```html a.html
 <a href="網頁所在路徑">連結文字</a>
@@ -67,10 +67,10 @@ tags: [HTML]
 <a href="網頁所在路徑#id名稱">連結文字</a>
 ```
 
-## 相對路徑與絕對路徑
+# 相對路徑與絕對路徑
 以上不論是img標籤的src屬性或是a標籤的href屬性皆是放置一個檔案的路徑位置，路徑分成兩種：一種是相對路徑，另外一種則是絕對路徑。
 
-### 相對路徑
+## 相對路徑
 相對路徑是指從你所在的位置該如何走到欲連結到的檔案的位置的路徑表示，底下用幾張我以前的ppt來解說。
 
 假設該網頁名稱為second6.html，若要連結到與網頁在同資料夾的圖片，則直接打上該名字即可。
@@ -82,12 +82,12 @@ tags: [HTML]
 若要連結的圖片在網頁所在的資料夾的上一層，則使用..去表示。
 ![html4-4.png](/image/kQiNSVBnTKm0EWe0YSSr_html4-4.png)
 
-### 絕對路徑
+## 絕對路徑
 絕對路徑通常是為了連結外部的資料，不在本網站內的資料去使用，因為不是本站的資料，所以無法使用相對路徑去連結到，只能使用絕對路徑去連結。若使用相對路徑，則網頁搬到不同的地方會連結到的位置會不同，端看該網頁的位置在何處；但若使用絕對路徑，則網頁不管搬到不同的地方則連結到的地方會是相同的。若你的資料會跟你的網站一起搬動，建議使用相對路徑；若不會，則使用絕對路徑。
 
 若是使用絕對路徑，則開頭會先寫明協定名稱，接著是IP位置、Domain Name或是電腦內的絕對路徑，例如要連結到Google就寫`<a href="http://www.google.com>Google連結</a>`，如果要瀏覽網頁者連到他自己電腦的圖片則使用`<img src="file:///C:/myphoto.jpeg" />`(當然我不建議連到本機端這種用法)。
 
-## 參考資料
+# 參考資料
 1. w3schools.com > HTML &lt;a&gt; Tag：[http://www.w3schools.com/tags/tag_a.asp](http://www.w3schools.com/tags/tag_a.asp)
 2. w3schools.com > HTML &lt;img&gt; Tag：[http://www.w3schools.com/tags/tag_img.asp](http://www.w3schools.com/tags/tag_img.asp)
 3. html5 - HTML Anchors with &#39;name&#39; or &#39;id&#39;? - Stack Overflow：[http://stackoverflow.com/questions/484719/html-anchors-with-name-or-id](http://stackoverflow.com/questions/484719/html-anchors-with-name-or-id)

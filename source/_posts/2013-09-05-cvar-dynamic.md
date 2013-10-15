@@ -9,7 +9,7 @@ tags: [CSharp]
 
 看到網路上似乎有人對於var和dynamic兩個的用法有點不了解，敝人就以自己沒用多久的經驗來告訴大家兩者的差別吧！
 
-## var: 編譯時期決定型別 (C# 3.0)
+# var: 編譯時期決定型別 (C# 3.0)
 var基本上來說，並沒有跳脫強型別的規範，也就是說，用var宣告出來的變數，依然還是屬於靜態型別的變數。var僅僅是讓你在宣告變數時，若可以明確判斷該變數為何種型別的話，就可以不必在變數宣告式寫上其型別，寫上var即可。
 
 ```cs varExample.cs
@@ -31,7 +31,7 @@ foreach( var pair in dict ){  //原本應該寫foreach(KeyValuePair<string, int>
 }
 ```
 
-## dynamic：執行時期決定型別 (C# 4.0)
+# dynamic：執行時期決定型別 (C# 4.0)
 這個dynamic就是真正的動態變數，類似於Javascript、Python、Ruby...等等這些語言的變數，一個變數的型態決定於被指派的時候，底下是個範例：
 ```cs dynamicExample.cs
 dynamic dyn; //宣告一個dynamic的變數
@@ -52,7 +52,7 @@ void Quack(dynamic duck){
 }
 ```
 
-## 參考資料
+# 參考資料
 1. MSDN > var (C# 參考)：[http://msdn.microsoft.com/zh-tw/library/bb383973.aspx](http://msdn.microsoft.com/zh-tw/library/bb383973.aspx)
 2. MSDN > dynamic (C# 參考)：[http://msdn.microsoft.com/zh-tw/library/dd264741.aspx](http://msdn.microsoft.com/zh-tw/library/dd264741.aspx)
 3. What's the difference between dynamic(C# 4) and var? - Stack Overflow：[http://stackoverflow.com/questions/961581/whats-the-difference-between-dynamicc-4-and-var](http://stackoverflow.com/questions/961581/whats-the-difference-between-dynamicc-4-and-var)

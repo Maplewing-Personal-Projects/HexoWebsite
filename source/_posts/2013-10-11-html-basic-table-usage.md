@@ -9,13 +9,13 @@ tags: [HTML]
 一直很想寫，但因為生病的關係停了一陣子，
 真的是很不好意思。
 
-## 行和列、欄和列、Row & Column
+# 行和列、欄和列、Row & Column
 首先要先能夠分別［行和列］、［欄和列］、［Row & Column］，這樣在表格的教學文中才不會出現問題，首先先看底下的圖來進行分辨：
 ![Row & Column](/image/hrFU4NcsTd2XnSS7psvg_slide-22-638.jpg)
 
 或許各位會記不起來行和列的分別，所以我利用以前在赫哲補習班學到的方法來告訴大家，透過行與列的第一個筆畫即可分別，`行`的第一個筆畫偏上下，而`列`的第一個筆畫為左右，故可藉此來分別，不過中國大陸的行和列是與我們相反的，還請各位多多注意。
 
-## 基本表格結構
+# 基本表格結構
 底下先讓我們看一個基礎的範例：
 ```html BasicTableExample.html
 <!DOCTYPE html>
@@ -58,7 +58,7 @@ tags: [HTML]
 
 再來有四組的`<tr>...</tr>`，每組tr標籤個別表示的是表格裡的一列，在每組tr標籤中，有`<td>...</td>`與`<th>...</th>`兩種標籤，分別都表示一列裡面的一格資料，只不過th標籤表示的是標題資料，td標籤表示的是一般資料。而th標籤由於是表示標題資料，故有預設的粗體、文字置中樣式會自動套上去。這樣大概就是整個表格的架構了！
 
-## 合併格
+# 合併格
 接著我們來合併格子吧！底下一樣給個範例：
 ```html BasicTableExample.html
 <!DOCTYPE html>
@@ -107,7 +107,7 @@ tags: [HTML]
 
 這樣講完了基本的表格用法，等之後再來提提更進階的表格結構吧！(雖然這個之後應該會非常久就是了XD!!)
 
-##參考資料
+# 參考資料
 1. w3schools.com &gt; HTML Tables：[http://www.w3schools.com/html/html_tables.asp](http://www.w3schools.com/html/html_tables.asp)
 2. w3schools.com &gt; HTML &lt;table&gt; Tag：[http://www.w3schools.com/tags/tag_table.asp](http://www.w3schools.com/tags/tag_table.asp)
 3. HTML表格（table）的常用語法：[http://www.pt.ntu.edu.tw/hmchai/ptcomputer03_2/hHTML/HTMLtable.htm](http://www.pt.ntu.edu.tw/hmchai/ptcomputer03_2/hHTML/HTMLtable.htm)
