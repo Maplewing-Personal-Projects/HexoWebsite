@@ -1,5 +1,5 @@
 layout: post
-title: '#生活趣事：9/27~10/3－開始忙碌的大學生活'
+title: '#生活趣事：[10.09.27~10.10.03]－開始忙碌的大學生活'
 date: 2010-10-03 22:06
 comments: true
 categories: [生活趣事]
@@ -76,4 +76,6 @@ tags: [生活趣事]
 
 ![灆洢](http://user-image.logdown.io/user/412/blog/4012/post/147140/F7l8EmD9Tbqryo7mWd39_lani-2.png)
 
-> 原始文章位址：http://www.knightzone.org/wordpress/archives/486、http://maplewing.blogspot.tw/2010/10/927103.html
+> 原始文章位址： 
+> 1. http://www.knightzone.org/wordpress/archives/486 
+> 2. http://maplewing.blogspot.tw/2010/10/927103.html 

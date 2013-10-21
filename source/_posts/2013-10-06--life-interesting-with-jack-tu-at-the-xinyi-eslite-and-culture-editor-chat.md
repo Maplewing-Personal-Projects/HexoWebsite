@@ -1,11 +1,9 @@
+---
 layout: post
-title: '#生活趣事：與Jack Tu在信義誠品和大真文化祝編輯的聊天'
+title: '#生活趣事：[13.10.06]－與Jack Tu在信義誠品和大真文化祝編輯的聊天'
 date: 2013-10-06 21:39
 comments: true
 categories: [生活趣事]
-tags: [生活趣事]
-photos:
-- /image/mabinogi_2013_10_07_002.jpg
 ---
 已經好久沒有寫日記心得文了，請原諒我呀Q_Q
 

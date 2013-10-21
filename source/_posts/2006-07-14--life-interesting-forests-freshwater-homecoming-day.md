@@ -1,9 +1,9 @@
+---
 layout: post
-title: '#生活趣事：樹林、淡水、返校日'
+title: '#生活趣事：[06.07.14]－樹林、淡水、返校日'
 date: 2006-07-14 23:33
 comments: true
 categories: [生活趣事]
-tags: [生活趣事]
 ---
 網站終於弄好了，累死我也。
 

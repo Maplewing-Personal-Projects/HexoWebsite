@@ -1,9 +1,9 @@
+---
 layout: post
-title: '#生活趣事：基隆一遊'
+title: '#生活趣事：[06.07.01]－基隆一遊'
 date: 2006-07-01 22:51
 comments: true
 categories: [生活趣事]
-tags: [生活趣事]
 ---
 今天去了基隆......
 

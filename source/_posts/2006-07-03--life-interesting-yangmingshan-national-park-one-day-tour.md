@@ -1,9 +1,9 @@
+---
 layout: post
-title: '#生活趣事：陽明山一日遊'
+title: '#生活趣事：[06.07.03]－陽明山一日遊'
 date: 2006-07-03 09:29
 comments: true
 categories: [生活趣事]
-tags: [生活趣事]
 ---
 補昨天加今天的日誌一篇......
 
