@@ -4,6 +4,8 @@ date: 2013-10-06 21:39
 comments: true
 categories: [生活趣事]
 tags: [生活趣事]
+photos:
+- /image/mabinogi_2013_10_07_002.jpg
 ---
 已經好久沒有寫日記心得文了，請原諒我呀Q_Q
 
