@@ -5,7 +5,7 @@ comments: true
 categories: [生活趣事]
 tags: [生活趣事]
 ---
-![灆洢](http://user-image.logdown.io/user/412/blog/4012/post/147140/PlRATpGmSPaS6aYVYEHX_lani-0.png)
+![灆洢](/image/PlRATpGmSPaS6aYVYEHX_lani-0.png)
 各位安安^^/
 來跟各位談談這禮拜發生的事情吧！
 - - -
@@ -74,7 +74,7 @@ tags: [生活趣事]
 - - -
 就到這裡了～各位晚安^^/
 
-![灆洢](http://user-image.logdown.io/user/412/blog/4012/post/147140/F7l8EmD9Tbqryo7mWd39_lani-2.png)
+![灆洢](/image/F7l8EmD9Tbqryo7mWd39_lani-2.png)
 
 > 原始文章位址： 
 > 1. http://www.knightzone.org/wordpress/archives/486 
