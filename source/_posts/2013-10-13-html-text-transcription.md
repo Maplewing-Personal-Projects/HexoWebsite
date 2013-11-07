@@ -1,9 +1,9 @@
 layout: post
-title: '#HTML：文字標音'
+title: '#HTML(HTML5)：文字標音'
 date: 2013-10-13 22:20
 comments: true
-categories: [HTML]
-tags: [HTML]
+categories: [HTML, HTML5]
+tags: [HTML, HTML5]
 ---
 本來是沒特別想寫這篇，不過想想這功能在最近已經被廣泛支援了，故就想說一定要好好來介紹一下！
 
