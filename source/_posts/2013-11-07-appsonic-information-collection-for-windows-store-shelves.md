@@ -7,6 +7,8 @@ tags: [Windows, APP]
 ---
 各位大家好，敝人在昨日總算是在Windows Store上架了APP－［索尼克資訊收集所］，稍微來簡介一下其功能吧！
 
+APP連結：[http://apps.microsoft.com/windows/zh-tw/app/13c70cc4-0316-4a99-8d07-05bbe80c6253](http://apps.microsoft.com/windows/zh-tw/app/13c70cc4-0316-4a99-8d07-05bbe80c6253)
+
 基本上來說，這就只是一個RSS閱讀器而已，只是我把平常大家常逛的Sonic Retro、Sonic Stadium和Sega Blog的RSS放進去，再加上以前有的Sonic Hub聯播(現在掛了QAQ)的部落格的RSS放進去這樣，是個要追蹤索尼克資訊還蠻便利的APP就是了。
 
 ![screenshot_11032013_180452.png](/image/lkyOhRh0Rw2qyYTqBGXi_screenshot_11032013_180452.png)
