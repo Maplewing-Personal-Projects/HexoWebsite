@@ -12,24 +12,24 @@ tags: [Windows Phone, APP, HTML5]
 ```html index.html
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <link rel="stylesheet" type="text/css" href="/html/css/phone.css" />
-        <title>Windows Phone</title>
-        <script>
-            var changeTitle = function (text) {
-                document.querySelectorAll("#page-title p")[0].innerHTML = text;
-            }
-        </script>
-    </head>
-    <body>
-        <div>
-            <p>我的應用程式</p>
-        </div>
-        <div id="page-title">
-            <p>頁面標題</p>
-        </div>
-    </body>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="/html/css/phone.css" />
+    <title>Windows Phone</title>
+    <script>
+      var changeTitle = function (text) {
+          document.querySelectorAll("#page-title p")[0].innerHTML = text;
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <p>我的應用程式</p>
+    </div>
+    <div id="page-title">
+      <p>頁面標題</p>
+    </div>
+  </body>
 </html>
 ```
 
@@ -53,7 +53,7 @@ private void BackApplicationBar_Click(object sender, EventArgs e)
 依照上面的道理，其實可以利用`eval()`函式來執行Javascript端的程式碼。所以上述範例其實可以改成：
 ```cs MainPage.cs
 Browser.InvokeScript("eval", 
-	new string[] { "document.querySelectorAll("#page-title p")[0].innerHTML = "Hello World!";" });
+  new string[] { "document.querySelectorAll("#page-title p")[0].innerHTML = "Hello World!";" });
 ```
 
 # 參考資料
