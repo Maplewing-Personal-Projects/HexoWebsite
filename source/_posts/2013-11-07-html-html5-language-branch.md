@@ -13,7 +13,7 @@ tags: [HTML, HTML5]
 # wbr：字詞方行
 ```html wbr.html
 ...
-   http://this<wbr />.is<wbr />.a<wbr />.really<wbr />.long<wbr />.example<wbr />.com/With<wbr />/deeper<wbr />/level<wbr />/pages
+  http://this<wbr />.is<wbr />.a<wbr />.really<wbr />.long<wbr />.example<wbr />.com/With<wbr />/deeper<wbr />/level<wbr />/pages
 ...
 ```
 以上是個例子，我們在我們認定可以斷行的地方去加上wbr標籤，瀏覽器就會在裝該文字的容器塞不下的時候選擇適當的wbr標籤去斷行。若文字能夠完美得塞進容器內那就不會進行斷行。

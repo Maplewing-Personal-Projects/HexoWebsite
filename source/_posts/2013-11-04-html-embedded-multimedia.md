@@ -11,14 +11,14 @@ tags: [HTML, HTML5]
 ```html media.html
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>多媒體</title>
-	</head>
-	<body>
-		<embed src="Sonic Generations [OST] - Rooftop Run (Modern).mp3" />
-		<embed src="[灆洢]Sonic Generations - Sky Sanctuary Act2 - 0225.13-087-Rank S.mp4" />
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>多媒體</title>
+  </head>
+  <body>
+    <embed src="Sonic Generations [OST] - Rooftop Run (Modern).mp3" />
+    <embed src="[灆洢]Sonic Generations - Sky Sanctuary Act2 - 0225.13-087-Rank S.mp4" />
+  </body>
 </html>
 ```
 ![media01.png](/image/6pi7sAHOS5O6khuZnIg2_media01.png)
@@ -33,17 +33,17 @@ embed主要是用外部的播放程式鑲嵌在網頁上來播放音樂或影片
 ```html media02.html
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>多媒體</title>
-	</head>
-	<body>
-		<p>
-			<audio src="Sonic Generations [OST] - Rooftop Run (Modern).mp3" controls autoplay loop>
-			對不起，您的瀏覽器不支援HTML5。
-			</audio>
-		</p>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>多媒體</title>
+  </head>
+  <body>
+    <p>
+      <audio src="Sonic Generations [OST] - Rooftop Run (Modern).mp3" controls autoplay loop>
+      對不起，您的瀏覽器不支援HTML5。
+      </audio>
+    </p>
+  </body>
 </html>
 ```
 ![media02.png](/image/rZPCxGf5Rc6oS3eonNvJ_media02.png)
@@ -56,17 +56,17 @@ audio裡面的內容可放置文字，來讓不支援HTML5的瀏覽器可以顯�
 ```html media03.html
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>多媒體</title>
-	</head>
-	<body>
-		<p>
-			<video src="[灆洢]Sonic Generations - Sky Sanctuary Act2 - 0225.13-087-Rank S.mp4" controls autoplay loop>
-			對不起，您的瀏覽器不支援HTML5。
-			</video>
-		</p>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>多媒體</title>
+  </head>
+  <body>
+    <p>
+      <video src="[灆洢]Sonic Generations - Sky Sanctuary Act2 - 0225.13-087-Rank S.mp4" controls autoplay loop>
+      對不起，您的瀏覽器不支援HTML5。
+      </video>
+    </p>
+  </body>
 </html>
 ```
 ![media03.png](/image/3cG7rTKT5aJyVOHdSwEk_media03.png)
@@ -90,11 +90,11 @@ video裡面的內容一樣可放置文字，來讓不支援HTML5的瀏覽器可�
 ## 影片格式支援
 | Browser | MP4 | WebM | Ogg |
 | ------- | --- | ---- | --- |
-| Internet Explorer | YES | NO | NO |
-| Chrome | YES | YES | YES |
-| Firefox | YES | YES | YES |
-| Safari | YES | NO | NO |
-| Opera | NO | YES | YES |
+| Internet Explorer | **YES** | NO | NO |
+| Chrome | **YES** | **YES** | **YES** |
+| Firefox | **YES** | **YES** | **YES** |
+| Safari | **YES** | NO | NO |
+| Opera | NO | **YES** | **YES** |
 
 看完上面的表，不知道各位有沒有發現，上面沒有一種格式可以在每個瀏覽器上皆可執行，那該怎麼辦呢？這時候就要來使用source標籤了！
 
@@ -102,26 +102,26 @@ video裡面的內容一樣可放置文字，來讓不支援HTML5的瀏覽器可�
 ```html media04.html
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>多媒體</title>
-	</head>
-	<body>
+  <head>
+    <meta charset="utf-8" />
+    <title>多媒體</title>
+  </head>
+  <body>
     <p>
-			<audio controls autoplay loop>
-      	<source src="music.ogg" type="audio/ogg">
-  			<source src="music.mp3" type="audio/mpeg">
+      <audio controls autoplay loop>
+        <source src="music.ogg" type="audio/ogg">
+        <source src="music.mp3" type="audio/mpeg">
         對不起，您的瀏覽器不支援HTML5。
-			</audio>
-		</p>
-		<p>
-			<video controls autoplay loop>
-      	<source src="movie.mp4" type="video/mp4">
-  			<source src="movie.ogg" type="video/ogg">
-				對不起，您的瀏覽器不支援HTML5。
-			</video>
-		</p>
-	</body>
+      </audio>
+    </p>
+    <p>
+      <video controls autoplay loop>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        對不起，您的瀏覽器不支援HTML5。
+      </video>
+    </p>
+  </body>
 </html>
 ```
 將audio或video內的src屬性拿掉，換成在audio或video內容內加入來source標籤，每個source標籤就代表一個音樂或是影片的來源，瀏覽器在讀的時候會照順序找尋可播放的來源，若找到有可以播放的來源時，就會播放。
