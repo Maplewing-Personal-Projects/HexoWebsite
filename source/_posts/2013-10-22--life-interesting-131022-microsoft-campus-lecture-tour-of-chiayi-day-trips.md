@@ -1,5 +1,5 @@
 layout: post
-title: '#生活趣事：[13.10.22]微軟校園巡迴講座之嘉義一日遊'
+title: '#生活趣事：[13.10.22]－微軟校園巡迴講座之嘉義一日遊'
 date: 2013-10-22 23:17
 comments: true
 categories: [生活趣事]

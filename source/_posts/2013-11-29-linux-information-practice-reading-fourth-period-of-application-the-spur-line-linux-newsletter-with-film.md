@@ -1,5 +1,5 @@
 layout: post
-title: '#Linux：資訊實務應用讀書會 第四堂課(支線)：Linux簡報與影片'
+title: '#Linux：台師大資訊實務應用讀書會 第四堂課(支線)：Linux簡報與影片'
 date: 2013-11-29 04:25
 comments: true
 categories: [Linux]
